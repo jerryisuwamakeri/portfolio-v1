@@ -31,9 +31,6 @@ export default {
   ],
   modules: [
   ],
-  sitemap: {
-    hostname: 'https://makerijerry.com'
-  },
   build: {
     postcss: {
       preset: {
