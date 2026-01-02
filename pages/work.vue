@@ -50,6 +50,32 @@
 			</div>
 		</div>
 
+		<div class="p-5 md:p-10 bg-gradient-to-r from-cyan-50 to-sky-50 w-full rounded-lg shadow-lg mb-8">
+			<span class="text-sm font-medium text-gray-500 mb-2 block">December 2024 – November 2025</span>
+			<h3 class="font-bold text-2xl text-gray-900">Technical Support Specialist</h3>
+			<p class="text-md font-semibold text-gray-700 mb-2">3MTT Nigeria (Federal Ministry of Communications, Innovation and Digital Economy) — Abuja, Nigeria</p>
+			<p class="font-medium my-3 text-gray-700">
+				Provided comprehensive technical support to programme participants, ensuring seamless platform access and user experience.
+			</p>
+			<ul class="list-disc list-inside text-gray-700 mb-4 space-y-1">
+				<li>Provided first-line and second-line technical support, resolving platform, access, and system-related issues.</li>
+				<li>Diagnosed and troubleshot web application issues, including login errors, dashboard access problems, and course module failures.</li>
+				<li>Assisted users with account onboarding, verification, password recovery, and profile configuration.</li>
+				<li>Escalated complex technical issues to engineering teams with clear documentation and reproduction steps.</li>
+				<li>Maintained detailed support tickets, incident logs, and resolution reports for accountability and service continuity.</li>
+				<li>Delivered remote technical assistance via email, chat, and virtual meetings.</li>
+				<li>Collaborated with community managers to resolve widespread or recurring technical challenges.</li>
+				<li>Identified recurring problems and contributed to knowledge base articles and FAQs.</li>
+			</ul>
+			<div class="flex flex-wrap gap-2">
+				<span class="bg-cyan-100 text-cyan-800 px-3 py-1 rounded-full text-xs font-semibold">Technical Support</span>
+				<span class="bg-cyan-100 text-cyan-800 px-3 py-1 rounded-full text-xs font-semibold">Troubleshooting</span>
+				<span class="bg-cyan-100 text-cyan-800 px-3 py-1 rounded-full text-xs font-semibold">LMS</span>
+				<span class="bg-cyan-100 text-cyan-800 px-3 py-1 rounded-full text-xs font-semibold">Documentation</span>
+				<span class="bg-cyan-100 text-cyan-800 px-3 py-1 rounded-full text-xs font-semibold">Remote Support</span>
+			</div>
+		</div>
+
 		<div class="p-5 md:p-10 bg-gradient-to-r from-purple-50 to-pink-50 w-full rounded-lg shadow-lg mb-8">
 			<span class="text-sm font-medium text-gray-500 mb-2 block">January 2024 – December 2024</span>
 			<h3 class="font-bold text-2xl text-gray-900">Server Administrator & Web Developer</h3>
