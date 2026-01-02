@@ -12,9 +12,7 @@ export default {
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
     ],
     link: [
-      { rel: 'icon', type: 'image/png', sizes: '32x32', href: 'static\image.jpg' },
-      { rel: 'icon', type: 'image/png', sizes: '16x16', href: 'static\image.jpg' },
-      { rel: 'icon', type: 'image/png', sizes: '96x96', href: 'static\image.jpg' }
+      { rel: 'icon', type: 'image/png', href: '/image.jpg' }
     ]
   },
   loading: { color: '#0083FF' },
@@ -24,10 +22,7 @@ export default {
   plugins: [
   ],
   buildModules: [
-    '@nuxtjs/tailwindcss',
-    ['@nuxtjs/google-analytics', {
-      id: 'UA-42412883-2'
-    }]
+    '@nuxtjs/tailwindcss'
   ],
   modules: [
   ],
