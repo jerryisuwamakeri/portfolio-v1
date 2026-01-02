@@ -1,6 +1,5 @@
 
 export default {
-  mode: 'universal',
   target: 'static',
   server: {     
     port: 8000, // default: 3000     
@@ -31,25 +30,9 @@ export default {
     }]
   ],
   modules: [
-    '@nuxt/content'
   ],
   sitemap: {
     hostname: 'https://makerijerry.com'
-  },
-  hooks: {
-    'content:file:beforeInsert': (document) => {
-      if (document.extension === '.md') {
-        const { text } = require('reading-time')(document.text)
-        document.readingTime = text
-      }
-    }
-  },
-  content: {
-    markdown: {
-        prism: {
-          theme: '@/assets/prism-themes/prism-material-oceanic.css'
-        }
-      }
   },
   build: {
     postcss: {
