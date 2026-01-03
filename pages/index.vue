@@ -1,5 +1,5 @@
 <template>
-  <div class="min-h-screen flex flex-col justify-center items-center text-center px-2 sm:px-4 md:px-6 lg:px-0 pt-14 pb-14 sm:pt-16 md:pt-20 md:pb-0" style="width: 100%; box-sizing: border-box; overflow-x: hidden;">
+  <div class="min-h-screen flex flex-col justify-center items-center text-center px-2 sm:px-4 md:px-6 lg:px-0 pt-14 pb-32 sm:pb-20 md:pt-20 md:pb-0" style="width: 100%; box-sizing: border-box; overflow-x: hidden;">
     <div class="flex justify-center py-1 absolute top-0 left-0 right-0" style="width: 100%; box-sizing: border-box; overflow: hidden;">
       <menu-links />
     </div>
@@ -11,7 +11,7 @@
       <h3 class="text-base sm:text-xl md:text-2xl lg:text-4xl font-extrabold leading-snug break-words mt-6 sm:mt-4" style="word-wrap: break-word; overflow-wrap: break-word;">Hello, I am Makeri Jerry Isuwa</h3>
       <p class="text-xs sm:text-sm md:text-base lg:text-lg text-gray-600 mt-5 sm:mt-3 md:mt-4 break-words" style="word-wrap: break-word; overflow-wrap: break-word;">A Fullstack Software Developer | AWS Cloud Engineer and IT Consultant</p>
       <p class="text-xs sm:text-sm md:text-sm lg:text-base text-gray-500 mt-5 sm:mt-3 md:mt-4 px-1 break-words" style="word-wrap: break-word; overflow-wrap: break-word;">I don't just write code; I architect digital experiences that solve real-world problems. My passion lies in transforming complex ideas into elegant, user-centric software.</p>
-      <nuxt-link class="text-xs sm:text-sm font-medium inline-flex items-center justify-center text-gray-500 mt-3 sm:mt-4 md:mt-6 hover:text-gray-700 transition-colors" :to="{ name: 'about'}" style="flex-wrap: wrap;">
+      <nuxt-link class="text-xs sm:text-sm font-medium inline-flex items-center justify-center text-gray-500 mt-6 sm:mt-5 md:mt-6 mb-8 sm:mb-6 hover:text-gray-700 transition-colors" :to="{ name: 'about'}" style="flex-wrap: wrap;">
         Read more about me
         <svg class="h-4 w-4 ml-1 flex-shrink-0" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" stroke="currentColor"><path d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
       </nuxt-link>
