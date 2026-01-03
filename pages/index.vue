@@ -8,9 +8,9 @@
         <!-- <img class="w-40 h-40 rounded-full shadow" src="https://www.gravatar.com/avatar/708ff0173fd2695ef4ef92cbf98975c8?s=500"> -->
         <img class="object-cover object-center w-full h-full rounded-full shadow" src="/image.jpg" alt="Makeri Jerry Isuwa">
       </div>
-      <h3 class="text-base sm:text-xl md:text-2xl lg:text-4xl font-extrabold leading-snug break-words">Hello, I am Makeri Jerry Isuwa</h3>
-      <p class="text-xs sm:text-sm md:text-base lg:text-lg text-gray-600 mt-1 sm:mt-2 md:mt-3 break-words">A Fullstack Software Developer | AWS Cloud Engineer and IT Consultant</p>
-      <p class="text-xs sm:text-sm md:text-sm lg:text-base text-gray-500 mt-1 sm:mt-2 md:mt-3 px-1 break-words">I don't just write code; I architect digital experiences that solve real-world problems. My passion lies in transforming complex ideas into elegant, user-centric software.</p>
+      <h3 class="text-base sm:text-xl md:text-2xl lg:text-4xl font-extrabold leading-snug break-words mt-6 sm:mt-4">Hello, I am Makeri Jerry Isuwa</h3>
+      <p class="text-xs sm:text-sm md:text-base lg:text-lg text-gray-600 mt-5 sm:mt-3 md:mt-4 break-words">A Fullstack Software Developer | AWS Cloud Engineer and IT Consultant</p>
+      <p class="text-xs sm:text-sm md:text-sm lg:text-base text-gray-500 mt-5 sm:mt-3 md:mt-4 px-1 break-words">I don't just write code; I architect digital experiences that solve real-world problems. My passion lies in transforming complex ideas into elegant, user-centric software.</p>
       <nuxt-link class="text-xs sm:text-sm font-medium inline-flex items-center text-gray-500 mt-3 sm:mt-4 md:mt-6 hover:text-gray-700 transition-colors" :to="{ name: 'about'}">
         Read more about me
         <svg class="h-4 w-4 ml-1" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" stroke="currentColor"><path d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
