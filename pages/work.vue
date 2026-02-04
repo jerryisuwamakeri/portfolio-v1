@@ -203,7 +203,7 @@
 		<h3 class="text-2xl font-extrabold mt-8 mb-3">Got a Project?</h3>
 		<p class="text-gray-600 mb-4">I'm currently available for new opportunities and collaborations. Whether you need a fullstack developer, cloud architect, or technical consultant, I'm here to help bring your vision to life.</p>
 		<div class="flex gap-4 mb-8">
-			<a href="mailto:holla@jerryisuwamakeri.com" class="bg-blue-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-700 transition">Shoot a mail</a>
+			<a href="mailto:makerijerry.dev@gmail.com" class="bg-blue-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-700 transition">Shoot a mail</a>
 		</div>
 	</div>
 </template>
