@@ -558,12 +558,35 @@ export default {
 }
 
 /* Mobile: collapse side column */
-@media (max-width: 480px) {
+@media (max-width: 520px) {
   .tl-entry {
-    grid-template-columns: 0 20px 1fr;
+    grid-template-columns: 0 16px 1fr;
   }
   .tl-side {
     display: none;
+  }
+  .tl-card {
+    margin-left: 10px;
+  }
+  .tl-card-body {
+    padding: 14px 14px 16px;
+  }
+  .tl-company {
+    font-size: 0.95rem;
+  }
+  .tl-role {
+    font-size: 0.65rem;
+    white-space: normal;
+    word-break: break-word;
+  }
+  .tl-desc {
+    font-size: 0.8rem;
+  }
+  .tl-bullets li {
+    font-size: 0.78rem;
+  }
+  .work-cta {
+    padding: 20px 18px;
   }
 }
 

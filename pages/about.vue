@@ -109,7 +109,6 @@
             <span class="skill-pill" style="border-color:rgba(34,211,238,0.3);color:#67E8F9;background:rgba(34,211,238,0.07);">JavaScript ★</span>
             <span class="skill-pill" style="border-color:rgba(34,211,238,0.3);color:#67E8F9;background:rgba(34,211,238,0.07);">PHP ★</span>
             <span class="skill-pill">TypeScript</span>
-            <span class="skill-pill">Python</span>
             <span class="skill-pill">Java</span>
             <span class="skill-pill">Elixir</span>
           </div>
