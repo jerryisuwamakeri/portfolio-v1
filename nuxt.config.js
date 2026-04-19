@@ -13,7 +13,8 @@ export default {
       { name: 'theme-color', content: '#0A0A0A' },
     ],
     link: [
-      { rel: 'icon', type: 'image/png', href: '/image.jpg' },
+      { rel: 'icon', type: 'image/jpeg', href: '/image.jpg' },
+      { rel: 'apple-touch-icon', href: '/image.jpg' },
       { rel: 'preconnect', href: 'https://fonts.googleapis.com' },
       { rel: 'preconnect', href: 'https://fonts.gstatic.com', crossorigin: 'anonymous' },
       {
