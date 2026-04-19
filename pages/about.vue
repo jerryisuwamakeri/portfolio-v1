@@ -1,201 +1,722 @@
 <template>
-	<div class="mb-3 mt-2">
-		<h3 class="text-2xl font-extrabold mb-3">About me</h3>
-		<h4 class="text-xl font-bold text-gray-800 mb-2">Professional Problem Solutions For Digital Products</h4>
-		<div>
-			<p class="mb-3">
-				I architect elegant code that solves complex problems and creates seamless user experiences. With a passion for innovation and precision, I bridge the gap between visionary concepts and functional, scalable digital products that drive real-world results.
-			</p>
+  <div class="about-page">
 
-			<p class="mb-3">
-				With <span class="font-bold">7+ years of professional experience</span>, I've completed over <span class="font-bold">20 projects</span> with a <span class="font-bold">99% client satisfaction rate</span>. My expertise spans frontend development, mobile app development, cloud architecture, and backend development.
-			</p>
-			
-			<div class="grid grid-cols-3 gap-4 my-6 text-center">
-				<div class="p-4 bg-gray-100 rounded-lg">
-					<div class="text-3xl font-extrabold text-gray-800">7+</div>
-					<div class="text-sm text-gray-600">Years Of Experience</div>
-				</div>
-				<div class="p-4 bg-gray-100 rounded-lg">
-					<div class="text-3xl font-extrabold text-gray-800">20+</div>
-					<div class="text-sm text-gray-600">Projects Completed</div>
-				</div>
-				<div class="p-4 bg-gray-100 rounded-lg">
-					<div class="text-3xl font-extrabold text-gray-800">99%</div>
-					<div class="text-sm text-gray-600">Client Satisfactions</div>
-				</div>
-			</div>
+    <!-- Hero intro -->
+    <div class="about-hero">
+      <div class="hero-left">
+        <div class="section-label">// about me</div>
+        <h2 class="about-name font-black">Makeri,<br><span style="color:#22D3EE;">Jerry Isuwa</span></h2>
+        <div class="role-tags">
+          <span class="role-tag">Backend Engineer</span>
+          <span class="role-tag role-tag--accent">Go · JS · PHP</span>
+          <span class="role-tag">Technical Support</span>
+          <span class="role-tag">API Developer</span>
+        </div>
+        <p class="about-bio">
+          I don't just write code — I architect digital systems built to last.
+          <strong>7+ years</strong> across fintech, energy, e-commerce, and social platforms.
+          My edge is bridging the gap between business needs and technical execution — fast, clean, and at scale.
+        </p>
+        <p class="about-bio">
+          Based in <strong>Abuja, Nigeria</strong>. Available for remote contracts worldwide.
+        </p>
+        <div class="available-badge">
+          <span class="available-dot"></span>
+          <span class="font-mono" style="font-size:0.68rem; letter-spacing:0.12em; text-transform:uppercase; color:#34D399;">Open to work</span>
+        </div>
+      </div>
+      <div class="hero-right">
+        <div class="photo-glow"></div>
+        <div class="photo-frame">
+          <img src="/image.jpg" alt="Makeri, Jerry Isuwa" />
+        </div>
+        <!-- Stats floating -->
+        <div class="floating-stats">
+          <div class="fstat">
+            <span class="fstat-num font-black">7+</span>
+            <span class="fstat-lbl">Years</span>
+          </div>
+          <div class="fstat-sep"></div>
+          <div class="fstat">
+            <span class="fstat-num font-black">20+</span>
+            <span class="fstat-lbl">Projects</span>
+          </div>
+          <div class="fstat-sep"></div>
+          <div class="fstat">
+            <span class="fstat-num font-black">99%</span>
+            <span class="fstat-lbl">Satisfaction</span>
+          </div>
+        </div>
+      </div>
+    </div>
 
-			<h3 class="text-2xl font-extrabold mt-5 mb-3">My Skills</h3>
-			<p class="mb-3">
-				I bring extensive experience across the full technology stack, with specialized knowledge in both established and emerging technologies. My skill set enables me to architect robust solutions, optimize performance, and deliver exceptional user experiences.
-			</p>
+    <!-- What I Do -->
+    <div class="section">
+      <div class="section-label">// services</div>
+      <h3 class="section-title font-bold">What I Do</h3>
+      <div class="services-grid">
+        <div class="service-card">
+          <div class="service-icon" style="color:#22D3EE;">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M5 12h14M12 5l7 7-7 7"/>
+            </svg>
+          </div>
+          <h4 class="service-name font-bold">Backend Engineering</h4>
+          <p class="service-desc">Scalable APIs, microservices, and server architecture in Go, Node.js, and PHP.</p>
+        </div>
+        <div class="service-card">
+          <div class="service-icon" style="color:#A78BFA;">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/>
+            </svg>
+          </div>
+          <h4 class="service-name font-bold">Fullstack Development</h4>
+          <p class="service-desc">End-to-end web apps using Vue, React, Laravel, and modern deployment stacks.</p>
+        </div>
+        <div class="service-card">
+          <div class="service-icon" style="color:#4ADE80;">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="5" y="2" width="14" height="20" rx="2"/><path d="M12 18h.01"/>
+            </svg>
+          </div>
+          <h4 class="service-name font-bold">Mobile Development</h4>
+          <p class="service-desc">Cross-platform mobile apps with React Native — iOS and Android from one codebase.</p>
+        </div>
+        <div class="service-card">
+          <div class="service-icon" style="color:#F472B6;">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/>
+            </svg>
+          </div>
+          <h4 class="service-name font-bold">Technical Support</h4>
+          <p class="service-desc">Developer advocacy, API documentation, and integration support for engineering teams.</p>
+        </div>
+      </div>
+    </div>
 
-			<div class="block md:flex">
-				<div class="w-full md:w-6/12 mb-5 md:pr-3">
-					<h3 class="text-xl font-bold text-gray-800">Languages & Frameworks</h3>
-					<hr class="text-gray-500">
-					<ul>
-						<li class="font-medium text-gray-700">Java</li>
-						<li class="font-medium text-gray-700">PHP</li>
-						<li class="font-medium text-gray-700">JavaScript/TypeScript</li>
-						<li class="font-medium text-gray-700">Node.js</li>
-						<li class="font-medium text-gray-700">Python</li>
-						<li class="font-medium text-gray-700">Elixir</li>
-						<li class="font-medium text-gray-700">React</li>
-						<li class="font-medium text-gray-700">Vue</li>
-						<li class="font-medium text-gray-700">Angular</li>
-						<li class="font-medium text-gray-700">Svelte</li>
-						<li class="font-medium text-gray-700">Laravel</li>
-						<li class="font-medium text-gray-700">Ruby on Rails</li>
-						<li class="font-medium text-gray-700">ASP.NET Core</li>
-					</ul>
-				</div>
-				<div class="w-full md:w-6/12 mb-5 md:pl-3">
-					<h3 class="text-xl font-bold text-gray-800">Databases & Data Handling</h3>
-					<hr class="text-gray-500">
-					<ul>
-						<li class="font-medium text-gray-700">MySQL</li>
-						<li class="font-medium text-gray-700">PostgreSQL</li>
-						<li class="font-medium text-gray-700">SQLite</li>
-						<li class="font-medium text-gray-700">MSSQL</li>
-						<li class="font-medium text-gray-700">MariaDB</li>
-						<li class="font-medium text-gray-700">OracleDB</li>
-						<li class="font-medium text-gray-700">MongoDB</li>
-						<li class="font-medium text-gray-700">Firebase</li>
-						<li class="font-medium text-gray-700">Supabase</li>
-						<li class="font-medium text-gray-700">Redis</li>
-						<li class="font-medium text-gray-700">IndexedDB</li>
-						<li class="font-medium text-gray-700">GraphQL</li>
-					</ul>
-				</div>	
-			</div>
+    <div class="divider"></div>
 
-			<div class="block md:flex">
-				<div class="w-full md:w-6/12 mb-5 md:pr-3">
-					<h3 class="text-xl font-bold text-gray-800">DevOps & Cloud</h3>
-					<hr class="text-gray-500">
-					<ul>
-						<li class="font-medium text-gray-700">AWS <span class="text-blue-600 font-bold">(Certified Developer Associate)</span></li>
-						<li class="font-medium text-gray-700">Docker</li>
-						<li class="font-medium text-gray-700">NGINX</li>
-						<li class="font-medium text-gray-700">WHM/cPanel</li>
-						<li class="font-medium text-gray-700">Linux</li>
-						<li class="font-medium text-gray-700">Heroku</li>
-						<li class="font-medium text-gray-700">Vercel</li>
-						<li class="font-medium text-gray-700">Netlify</li>
-						<li class="font-medium text-gray-700">GitHub Actions</li>
-						<li class="font-medium text-gray-700">Bitbucket Pipelines</li>
-					</ul>
-				</div>
-				<div class="w-full md:w-6/12 mb-5 md:pl-3">
-					<h3 class="text-xl font-bold text-gray-800">CMS & Platform Tools</h3>
-					<hr class="text-gray-500">
-					<ul>
-						<li class="font-medium text-gray-700">Strapi</li>
-						<li class="font-medium text-gray-700">Botble</li>
-						<li class="font-medium text-gray-700">Webflow</li>
-						<li class="font-medium text-gray-700">Ghost</li>
-						<li class="font-medium text-gray-700">Shopify</li>
-					</ul>
-				</div>	
-			</div>
+    <!-- Skills -->
+    <div class="section">
+      <div class="section-label">// skills</div>
+      <h3 class="section-title font-bold">Tech Stack</h3>
 
-			<div class="block md:flex">
-				<div class="w-full md:w-6/12 mb-5 md:pr-3">
-					<h3 class="text-xl font-bold text-gray-800">Testing & Documentation</h3>
-					<hr class="text-gray-500">
-					<ul>
-						<li class="font-medium text-gray-700">Postman</li>
-						<li class="font-medium text-gray-700">Swagger</li>
-						<li class="font-medium text-gray-700">Mocha & Chai</li>
-						<li class="font-medium text-gray-700">Jest</li>
-						<li class="font-medium text-gray-700">Insomnia</li>
-					</ul>
-				</div>
-				<div class="w-full md:w-6/12 mb-5 md:pl-3">
-					<h3 class="text-xl font-bold text-gray-800">Design & Productivity</h3>
-					<hr class="text-gray-500">
-					<ul>
-						<li class="font-medium text-gray-700">Figma</li>
-						<li class="font-medium text-gray-700">Canva</li>
-						<li class="font-medium text-gray-700">Office Suite</li>
-						<li class="font-medium text-gray-700">Notion</li>
-						<li class="font-medium text-gray-700">Trello</li>
-						<li class="font-medium text-gray-700">Tableau</li>
-						<li class="font-medium text-gray-700">Slack</li>
-					</ul>
-				</div>	
-			</div>
+      <div class="skill-rows">
+        <div class="skill-row">
+          <div class="skill-row-label font-mono">Languages</div>
+          <div class="pills">
+            <span class="skill-pill" style="border-color:rgba(34,211,238,0.3);color:#67E8F9;background:rgba(34,211,238,0.07);">Go ★</span>
+            <span class="skill-pill" style="border-color:rgba(34,211,238,0.3);color:#67E8F9;background:rgba(34,211,238,0.07);">JavaScript ★</span>
+            <span class="skill-pill" style="border-color:rgba(34,211,238,0.3);color:#67E8F9;background:rgba(34,211,238,0.07);">PHP ★</span>
+            <span class="skill-pill">TypeScript</span>
+            <span class="skill-pill">Python</span>
+            <span class="skill-pill">Java</span>
+            <span class="skill-pill">Elixir</span>
+          </div>
+        </div>
+        <div class="skill-row">
+          <div class="skill-row-label font-mono">Frameworks</div>
+          <div class="pills">
+            <span class="skill-pill">Node.js</span>
+            <span class="skill-pill">React</span>
+            <span class="skill-pill">Vue</span>
+            <span class="skill-pill">Angular</span>
+            <span class="skill-pill">Svelte</span>
+            <span class="skill-pill">Laravel</span>
+            <span class="skill-pill">ASP.NET Core</span>
+            <span class="skill-pill">Ruby on Rails</span>
+          </div>
+        </div>
+        <div class="skill-row">
+          <div class="skill-row-label font-mono">Databases</div>
+          <div class="pills">
+            <span class="skill-pill">PostgreSQL</span>
+            <span class="skill-pill">MySQL</span>
+            <span class="skill-pill">MongoDB</span>
+            <span class="skill-pill">Redis</span>
+            <span class="skill-pill">Firebase</span>
+            <span class="skill-pill">Supabase</span>
+            <span class="skill-pill">GraphQL</span>
+            <span class="skill-pill">SQLite</span>
+          </div>
+        </div>
+        <div class="skill-row">
+          <div class="skill-row-label font-mono">DevOps</div>
+          <div class="pills">
+            <span class="skill-pill">AWS</span>
+            <span class="skill-pill">Docker</span>
+            <span class="skill-pill">NGINX</span>
+            <span class="skill-pill">Linux</span>
+            <span class="skill-pill">GitHub Actions</span>
+            <span class="skill-pill">Vercel</span>
+            <span class="skill-pill">Netlify</span>
+            <span class="skill-pill">Heroku</span>
+          </div>
+        </div>
+        <div class="skill-row">
+          <div class="skill-row-label font-mono">Mobile &amp; CMS</div>
+          <div class="pills">
+            <span class="skill-pill">React Native</span>
+            <span class="skill-pill">Strapi</span>
+            <span class="skill-pill">Shopify</span>
+            <span class="skill-pill">Webflow</span>
+            <span class="skill-pill">Ghost</span>
+          </div>
+        </div>
+        <div class="skill-row">
+          <div class="skill-row-label font-mono">Tooling</div>
+          <div class="pills">
+            <span class="skill-pill">Postman</span>
+            <span class="skill-pill">Swagger</span>
+            <span class="skill-pill">Jest</span>
+            <span class="skill-pill">Figma</span>
+            <span class="skill-pill">Notion</span>
+            <span class="skill-pill">Tableau</span>
+          </div>
+        </div>
+      </div>
+    </div>
 
-			<h3 class="text-2xl font-extrabold mt-5 mb-3">Professional Strengths</h3>
-			<div class="block md:flex mb-5">
-				<div class="w-full md:w-6/12 mb-5 md:pr-3">
-					<h4 class="text-lg font-bold text-gray-800 mb-2">Communication</h4>
-					<p class="text-gray-700">Excellent communication skills enable me to collaborate with clients, stakeholders, and cross-functional teams to deliver high-quality results.</p>
-				</div>
-				<div class="w-full md:w-6/12 mb-5 md:pl-3">
-					<h4 class="text-lg font-bold text-gray-800 mb-2">Leadership</h4>
-					<p class="text-gray-700">Mentor junior developers, coordinate project tasks, and implement best practices to ensure timely delivery of high-quality applications.</p>
-				</div>
-			</div>
+    <div class="divider"></div>
 
-			<h3 class="text-2xl font-extrabold mt-5 mb-3">Education & Certifications</h3>
-			
-			<div class="mb-5">
-				<h3 class="text-xl font-bold text-gray-900">Bachelor's Degree - Crop Genetics and Engineering</h3>
-				<span class="text-sm font-medium text-gray-600">Kaduna State University | 2017 - 2023</span>
-			</div>
+    <!-- Strengths -->
+    <div class="section">
+      <div class="section-label">// strengths</div>
+      <h3 class="section-title font-bold">What Sets Me Apart</h3>
+      <div class="strengths-grid">
+        <div class="strength-card">
+          <div class="strength-icon" style="color:#22D3EE;">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M13 10V3L4 14h7v7l9-11h-7z"/>
+            </svg>
+          </div>
+          <h4 class="strength-name font-bold">Fast Execution</h4>
+          <p class="strength-desc">Shipping clean, production-ready code quickly without sacrificing quality or maintainability.</p>
+        </div>
+        <div class="strength-card">
+          <div class="strength-icon" style="color:#A78BFA;">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M9 3H5a2 2 0 00-2 2v4m6-6h10a2 2 0 012 2v4M9 3v18m0 0h10a2 2 0 002-2v-4M9 21H5a2 2 0 01-2-2v-4m0 0h18"/>
+            </svg>
+          </div>
+          <h4 class="strength-name font-bold">Systems Thinking</h4>
+          <p class="strength-desc">Designing architectures that account for edge cases, growth, and long-term maintainability.</p>
+        </div>
+        <div class="strength-card">
+          <div class="strength-icon" style="color:#4ADE80;">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0z"/>
+            </svg>
+          </div>
+          <h4 class="strength-name font-bold">Team Leadership</h4>
+          <p class="strength-desc">Mentoring devs, coordinating tasks, and driving best practices for timely delivery.</p>
+        </div>
+        <div class="strength-card">
+          <div class="strength-icon" style="color:#F472B6;">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"/>
+            </svg>
+          </div>
+          <h4 class="strength-name font-bold">Clear Communication</h4>
+          <p class="strength-desc">Translating technical complexity into plain language — for clients, teams, and stakeholders.</p>
+        </div>
+      </div>
+    </div>
 
-			<div class="mb-5">
-				<h3 class="text-xl font-bold text-gray-900">AWS Developer Associate Certification</h3>
-				<span class="text-sm font-medium text-gray-600">Amazon Web Services | 2024</span>
-			</div>
+    <div class="divider"></div>
 
-			<div class="mb-5">
-				<h3 class="text-xl font-bold text-gray-900">Careers in Commercial Banking</h3>
-				<span class="text-sm font-medium text-gray-600">Corporate Affairs Institute | 2021</span>
-			</div>
+    <!-- Education -->
+    <div class="section">
+      <div class="section-label">// education &amp; certs</div>
+      <h3 class="section-title font-bold">Credentials</h3>
+      <div class="edu-list">
+        <div class="edu-item">
+          <div class="edu-year font-mono">2023</div>
+          <div class="edu-bar"></div>
+          <div class="edu-content">
+            <h4 class="edu-title font-bold">B.Sc. Crop Genetics &amp; Engineering</h4>
+            <span class="edu-meta font-mono">Kaduna State University · 2017 – 2023</span>
+          </div>
+        </div>
+        <div class="edu-item">
+          <div class="edu-year font-mono">2021</div>
+          <div class="edu-bar"></div>
+          <div class="edu-content">
+            <h4 class="edu-title font-bold">Careers in Commercial Banking</h4>
+            <span class="edu-meta font-mono">Corporate Affairs Institute · 2021</span>
+          </div>
+        </div>
+        <div class="edu-item">
+          <div class="edu-year font-mono">2021</div>
+          <div class="edu-bar"></div>
+          <div class="edu-content">
+            <h4 class="edu-title font-bold">Accounting Fundamentals</h4>
+            <span class="edu-meta font-mono">Corporate Affairs Institute · 2021</span>
+          </div>
+        </div>
+      </div>
+    </div>
 
-			<div class="mb-5">
-				<h3 class="text-xl font-bold text-gray-900">Accounting Fundamentals</h3>
-				<span class="text-sm font-medium text-gray-600">Corporate Affairs Institute | 2021</span>
-			</div>
+    <div class="divider"></div>
 
-			<h3 class="text-2xl font-extrabold mt-5">Principles & Methodologies</h3>
-			<p class="text-gray-600 mb-3">I follow industry-standard best practices and methodologies to ensure code quality and maintainability:</p>
-			<ul class="mb-4">
-				<li class="font-medium text-gray-700">• Agile/Scrum</li>
-				<li class="font-medium text-gray-700">• KISS (Keep It Simple, Stupid)</li>
-				<li class="font-medium text-gray-700">• DRY (Don't Repeat Yourself)</li>
-				<li class="font-medium text-gray-700">• YAGNI (You Aren't Gonna Need It)</li>
-				<li class="font-medium text-gray-700">• SOLID Principles</li>
-				<li class="font-medium text-gray-700">• TDD (Test-Driven Development)</li>
-				<li class="font-medium text-gray-700">• CI/CD (Continuous Integration/Continuous Deployment)</li>
-			</ul>
-		</div>
-	</div>
+    <!-- Principles -->
+    <div class="section" style="margin-bottom:60px;">
+      <div class="section-label">// principles</div>
+      <h3 class="section-title font-bold">How I Work</h3>
+      <div class="pills" style="margin-top:14px; gap:8px;">
+        <span class="principle-pill">Agile / Scrum</span>
+        <span class="principle-pill">SOLID Principles</span>
+        <span class="principle-pill">DRY</span>
+        <span class="principle-pill">KISS</span>
+        <span class="principle-pill">YAGNI</span>
+        <span class="principle-pill">TDD</span>
+        <span class="principle-pill">CI / CD</span>
+        <span class="principle-pill">Clean Architecture</span>
+        <span class="principle-pill">Code Reviews</span>
+      </div>
+    </div>
+
+  </div>
 </template>
 
 <script>
-import menuLinks from '~/components/menuLinks.vue'
 export default {
-  components: {menuLinks},
   layout: 'app',
   head () {
-      return {
-        title: 'Makeri Jerry Isuwa - About me',
-        meta: [
-          { name: 'description', content: "I architect elegant code that solves complex problems and creates seamless user experiences. Fullstack Software Developer, AWS Cloud Engineer and IT Consultant." },
-          { name: "twitter:card", content: "summary"},
-          { name: "twitter:site", content: "@makeri_jerry"},
-          { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-          { name: "twitter:creator", content: "@makeri_jerry"},
-          { name: "og:title", content: "Makeri Jerry Isuwa - About me"},
-          { name: "og:description", content: "I architect elegant code that solves complex problems and creates seamless user experiences. Fullstack Software Developer, AWS Cloud Engineer and IT Consultant."},
-          { name: "og:image", content: "/image.jpg"}
-        ]
-      }
-  }  
+    return {
+      title: 'About — Makeri, Jerry Isuwa',
+      meta: [
+        { name: 'description', content: 'Fullstack Engineer — Backend Major (Go, JS & PHP). 7+ years building scalable digital products across fintech, energy, and e-commerce.' },
+        { name: 'twitter:card', content: 'summary' },
+        { name: 'twitter:site', content: '@makeri_jerry' },
+        { name: 'og:title', content: 'About — Makeri, Jerry Isuwa' },
+        { name: 'og:description', content: 'Fullstack Engineer, Backend Major. 7+ years, 20+ projects.' },
+        { name: 'og:image', content: '/image.jpg' }
+      ]
+    }
+  }
 }
 </script>
+
+<style scoped>
+.about-page {
+  padding-top: 12px;
+  padding-bottom: 20px;
+}
+
+.section-label {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.72rem;
+  color: #22D3EE;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+/* ── Hero intro ── */
+.about-hero {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  margin-bottom: 48px;
+}
+
+@media (min-width: 600px) {
+  .about-hero {
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 48px;
+  }
+}
+
+.hero-left {
+  flex: 1;
+  order: 2;
+}
+
+@media (min-width: 600px) {
+  .hero-left {
+    order: 1;
+  }
+}
+
+.hero-right {
+  flex-shrink: 0;
+  position: relative;
+  order: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+
+@media (min-width: 600px) {
+  .hero-right {
+    order: 2;
+    align-items: flex-end;
+  }
+}
+
+.photo-glow {
+  position: absolute;
+  top: -16px;
+  left: -16px;
+  right: -16px;
+  bottom: -16px;
+  border-radius: 20px;
+  background: radial-gradient(circle, rgba(34, 211, 238, 0.1) 0%, transparent 70%);
+  pointer-events: none;
+}
+
+.photo-frame {
+  width: 160px;
+  height: 160px;
+  border-radius: 16px;
+  overflow: hidden;
+  border: 1px solid rgba(34, 211, 238, 0.2);
+  box-shadow: 0 0 40px rgba(34, 211, 238, 0.08);
+  position: relative;
+  z-index: 1;
+}
+
+@media (min-width: 600px) {
+  .photo-frame {
+    width: 180px;
+    height: 180px;
+  }
+}
+
+.photo-frame img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+}
+
+/* Floating stats under photo */
+.floating-stats {
+  display: flex;
+  align-items: center;
+  gap: 0;
+  background: #111;
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+  z-index: 1;
+}
+
+.fstat {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px 16px;
+  gap: 2px;
+}
+
+.fstat-num {
+  font-size: 1.1rem;
+  font-weight: 900;
+  color: #22D3EE;
+  line-height: 1;
+}
+
+.fstat-lbl {
+  font-size: 0.6rem;
+  color: #475569;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+.fstat-sep {
+  width: 1px;
+  height: 28px;
+  background: rgba(255, 255, 255, 0.06);
+}
+
+/* Name & role */
+.about-name {
+  font-size: clamp(2rem, 5vw, 3rem);
+  line-height: 1.05;
+  color: #F8FAFC;
+  font-weight: 900;
+  margin-bottom: 14px;
+}
+
+.role-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-bottom: 18px;
+}
+
+.role-tag {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.65rem;
+  padding: 3px 10px;
+  border-radius: 100px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  color: #475569;
+  background: rgba(255, 255, 255, 0.02);
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.role-tag--accent {
+  border-color: rgba(34, 211, 238, 0.25);
+  color: #22D3EE;
+  background: rgba(34, 211, 238, 0.05);
+}
+
+.about-bio {
+  font-size: 0.88rem;
+  line-height: 1.75;
+  color: #64748B;
+  margin-bottom: 10px;
+  max-width: 480px;
+}
+
+.about-bio strong {
+  color: #94A3B8;
+  font-weight: 600;
+}
+
+.available-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  padding: 5px 12px;
+  border-radius: 100px;
+  background: rgba(52, 211, 153, 0.07);
+  border: 1px solid rgba(52, 211, 153, 0.2);
+  margin-top: 6px;
+}
+
+.available-dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: #34D399;
+  box-shadow: 0 0 8px #34D399;
+  animation: pulse-dot 2s ease-in-out infinite;
+  flex-shrink: 0;
+}
+
+@keyframes pulse-dot {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.4; }
+}
+
+/* Divider */
+.divider {
+  height: 1px;
+  background: rgba(255, 255, 255, 0.05);
+  margin: 40px 0;
+}
+
+.section {
+  margin-bottom: 0;
+}
+
+.section-title {
+  font-size: 1.2rem;
+  color: #F1F5F9;
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+
+/* ── Services ── */
+.services-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+@media (max-width: 460px) {
+  .services-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.service-card {
+  padding: 20px;
+  border-radius: 12px;
+  background: #0F0F0F;
+  border: 1px solid rgba(255, 255, 255, 0.04);
+  transition: border-color 180ms ease, transform 180ms ease;
+}
+
+.service-card:hover {
+  border-color: rgba(34, 211, 238, 0.12);
+  transform: translateY(-2px);
+}
+
+.service-icon {
+  width: 28px;
+  height: 28px;
+  margin-bottom: 12px;
+}
+
+.service-icon svg {
+  width: 100%;
+  height: 100%;
+}
+
+.service-name {
+  font-size: 0.88rem;
+  color: #E2E8F0;
+  font-weight: 700;
+  margin-bottom: 6px;
+}
+
+.service-desc {
+  font-size: 0.78rem;
+  color: #475569;
+  line-height: 1.65;
+}
+
+/* ── Skills rows ── */
+.skill-rows {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.skill-row {
+  display: grid;
+  grid-template-columns: 100px 1fr;
+  gap: 16px;
+  align-items: flex-start;
+  padding: 12px 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.04);
+}
+
+.skill-row:last-child {
+  border-bottom: none;
+}
+
+@media (max-width: 480px) {
+  .skill-row {
+    grid-template-columns: 1fr;
+    gap: 6px;
+  }
+}
+
+.skill-row-label {
+  font-size: 0.65rem;
+  color: #334155;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-weight: 600;
+  padding-top: 4px;
+  white-space: nowrap;
+}
+
+.pills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+/* ── Strengths ── */
+.strengths-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+@media (max-width: 400px) {
+  .strengths-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.strength-card {
+  padding: 20px;
+  border-radius: 12px;
+  background: #0F0F0F;
+  border: 1px solid rgba(255, 255, 255, 0.04);
+  transition: border-color 180ms ease;
+}
+
+.strength-card:hover {
+  border-color: rgba(255, 255, 255, 0.08);
+}
+
+.strength-icon {
+  width: 28px;
+  height: 28px;
+  margin-bottom: 12px;
+}
+
+.strength-icon svg {
+  width: 100%;
+  height: 100%;
+}
+
+.strength-name {
+  font-size: 0.88rem;
+  color: #F1F5F9;
+  margin-bottom: 6px;
+  font-weight: 700;
+}
+
+.strength-desc {
+  font-size: 0.78rem;
+  color: #475569;
+  line-height: 1.65;
+}
+
+/* ── Education ── */
+.edu-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.edu-item {
+  display: grid;
+  grid-template-columns: 44px 2px 1fr;
+  gap: 0 16px;
+  align-items: flex-start;
+  padding: 16px 0;
+}
+
+.edu-item + .edu-item .edu-bar {
+  margin-top: 0;
+}
+
+.edu-year {
+  font-size: 0.68rem;
+  color: #334155;
+  letter-spacing: 0.06em;
+  padding-top: 2px;
+  text-align: right;
+}
+
+.edu-bar {
+  width: 2px;
+  background: rgba(34, 211, 238, 0.2);
+  border-radius: 1px;
+  align-self: stretch;
+  min-height: 40px;
+}
+
+.edu-content {
+  padding-bottom: 4px;
+}
+
+.edu-title {
+  font-size: 0.9rem;
+  color: #E2E8F0;
+  margin-bottom: 4px;
+  font-weight: 700;
+  line-height: 1.3;
+}
+
+.edu-meta {
+  font-size: 0.68rem;
+  color: #334155;
+  letter-spacing: 0.04em;
+}
+</style>

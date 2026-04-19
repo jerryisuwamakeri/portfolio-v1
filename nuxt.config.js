@@ -1,31 +1,36 @@
 
 export default {
   target: 'static',
-  server: {     
-    port: 8000, // default: 3000     
-    host: '0.0.0.0', // default: localhost   
+  server: {
+    port: 8000,
+    host: '0.0.0.0',
   },
   head: {
-    title: process.env.npm_package_name || '',
+    title: 'Makeri, Jerry Isuwa — Fullstack Engineer & Backend Developer',
     meta: [
       { charset: 'utf-8' },
-      { name: 'viewport', content: 'width=device-width, initial-scale=1, viewport-fit=cover, maximum-scale=1' },
+      { name: 'viewport', content: 'width=device-width, initial-scale=1, viewport-fit=cover' },
+      { name: 'theme-color', content: '#0A0A0A' },
     ],
     link: [
-      { rel: 'icon', type: 'image/png', href: '/image.jpg' }
+      { rel: 'icon', type: 'image/png', href: '/image.jpg' },
+      { rel: 'preconnect', href: 'https://fonts.googleapis.com' },
+      { rel: 'preconnect', href: 'https://fonts.gstatic.com', crossorigin: 'anonymous' },
+      {
+        rel: 'stylesheet',
+        href: 'https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600;700&display=swap'
+      }
     ]
   },
-  loading: { color: '#0083FF' },
+  loading: { color: '#22D3EE' },
   css: [
     '@/assets/css/tailwind.css',
   ],
-  plugins: [
-  ],
+  plugins: [],
   buildModules: [
     '@nuxtjs/tailwindcss'
   ],
-  modules: [
-  ],
+  modules: [],
   build: {
     postcss: {
       preset: {
@@ -33,8 +38,7 @@ export default {
       }
     },
     extractCSS: true,
-    extend (config, ctx) {
-    }
+    extend (config, ctx) {}
   },
   generate: {
     fallback: true

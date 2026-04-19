@@ -1,47 +1,319 @@
 <template>
-  <div class="min-h-screen flex flex-col justify-center items-center text-center px-2 sm:px-4 md:px-6 lg:px-0 pt-14 pb-32 sm:pb-20 md:pt-20 md:pb-0" style="width: 100%; box-sizing: border-box; overflow-x: hidden;">
-    <div class="flex justify-center py-1 absolute top-0 left-0 right-0" style="width: 100%; box-sizing: border-box; overflow: hidden;">
+  <div class="dot-grid" style="background: #0A0A0A; min-height: 100vh; display: flex; flex-direction: column; overflow-x: hidden;">
+
+    <!-- Nav -->
+    <nav style="display: flex; align-items: center; justify-content: space-between; padding: 20px 24px; max-width: 1000px; margin: 0 auto; width: 100%;">
+      <span class="font-mono" style="color: #22D3EE; font-size: 0.85rem; font-weight: 700; letter-spacing: 0.02em;">jerry.dev</span>
       <menu-links />
-    </div>
-    <div class="w-full max-w-lg px-1" style="box-sizing: border-box;">
-      <div class="w-20 h-20 sm:w-28 sm:h-28 md:w-36 md:h-36 lg:w-40 lg:h-40 rounded-full mx-auto shadow-lg mb-2 sm:mb-3 md:mb-4 overflow-hidden flex-shrink-0" style="flex-shrink: 0;">
-        <!-- <img class="w-40 h-40 rounded-full shadow" src="https://www.gravatar.com/avatar/708ff0173fd2695ef4ef92cbf98975c8?s=500"> -->
-        <img class="object-cover object-center w-full h-full rounded-full shadow" src="/image.jpg" alt="Makeri Jerry Isuwa">
+    </nav>
+
+    <!-- Hero -->
+    <main style="flex: 1; display: flex; align-items: center; justify-content: center; padding: 24px 24px 60px; max-width: 1000px; margin: 0 auto; width: 100%;">
+      <div class="hero-inner">
+
+        <!-- Photo side -->
+        <div class="hero-photo">
+          <div class="photo-glow"></div>
+          <div class="photo-frame">
+            <img src="/image.jpg" alt="Makeri, Jerry Isuwa" style="width: 100%; height: 100%; object-fit: cover; object-position: center;" />
+          </div>
+          <div class="photo-badge font-mono">
+            <span style="color: #22D3EE;">7+</span> yrs
+          </div>
+        </div>
+
+        <!-- Text side -->
+        <div class="hero-text">
+
+          <!-- Available badge -->
+          <div class="available-badge">
+            <span class="available-dot"></span>
+            <span class="font-mono" style="font-size: 0.68rem; letter-spacing: 0.14em; text-transform: uppercase; color: #34D399;">Available for work</span>
+          </div>
+
+          <!-- Name -->
+          <h1 class="hero-name font-black">
+            Makeri,<br>
+            <span style="color: #22D3EE;">Jerry Isuwa<span style="color: rgba(255,255,255,0.12);">.</span></span>
+          </h1>
+
+          <!-- Terminal line -->
+          <div class="terminal-line font-mono">
+            <span style="color: #22D3EE;">$</span>
+            <span style="color: #334155; margin: 0 6px;">whoami</span>
+            <span style="color: #94A3B8;">"Fullstack Engineer — Backend Major (Go, JS &amp; PHP)"</span>
+          </div>
+
+          <!-- Description -->
+          <p class="hero-desc">
+            I architect scalable systems and ship digital products that move the needle.
+            7+ years turning complex problems into elegant, maintainable solutions.
+          </p>
+
+          <!-- CTAs -->
+          <div class="hero-ctas">
+            <nuxt-link :to="{ name: 'about' }" class="btn-primary font-bold">
+              About me
+              <svg style="width:14px;height:14px;flex-shrink:0;" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2.5">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
+              </svg>
+            </nuxt-link>
+            <nuxt-link :to="{ name: 'work' }" class="btn-ghost">View work</nuxt-link>
+            <a href="mailto:makerijerry.dev@gmail.com?subject=Hi Jerry, I'd like to hire you" class="btn-muted">Hire me</a>
+          </div>
+        </div>
+
       </div>
-      <h3 class="text-base sm:text-xl md:text-2xl lg:text-4xl font-extrabold leading-snug break-words mt-6 sm:mt-4" style="word-wrap: break-word; overflow-wrap: break-word;">Hello, I am Makeri Jerry Isuwa</h3>
-      <p class="text-xs sm:text-sm md:text-base lg:text-lg text-gray-600 mt-5 sm:mt-3 md:mt-4 break-words" style="word-wrap: break-word; overflow-wrap: break-word;">A Fullstack Software Developer | AWS Cloud Engineer and IT Consultant</p>
-      <p class="text-xs sm:text-sm md:text-sm lg:text-base text-gray-500 mt-5 sm:mt-3 md:mt-4 px-1 break-words" style="word-wrap: break-word; overflow-wrap: break-word;">I don't just write code; I architect digital experiences that solve real-world problems. My passion lies in transforming complex ideas into elegant, user-centric software.</p>
-      <nuxt-link class="text-xs sm:text-sm font-medium inline-flex items-center justify-center text-gray-500 mt-6 sm:mt-5 md:mt-6 mb-8 sm:mb-6 hover:text-gray-700 transition-colors" :to="{ name: 'about'}" style="flex-wrap: wrap;">
-        Read more about me
-        <svg class="h-4 w-4 ml-1 flex-shrink-0" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" stroke="currentColor"><path d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
-      </nuxt-link>
-    </div>
-    <div class="flex justify-center py-2 absolute bottom-0 left-0 right-0" style="width: 100%; box-sizing: border-box; overflow: hidden;">
-      <ul>
-        <footer-links />
-      </ul>
-    </div>
+    </main>
+
+    <!-- Footer socials -->
+    <footer style="display: flex; justify-content: center; padding-bottom: 28px;">
+      <footer-links />
+    </footer>
+
   </div>
 </template>
+
 <script>
 import menuLinks from '~/components/menuLinks.vue'
 import footerLinks from '~/components/footerLinks.vue'
 export default {
-  components: {menuLinks, footerLinks},
+  components: { menuLinks, footerLinks },
   head () {
-      return {
-        title: 'Makeri Jerry Isuwa - Fullstack Software Developer | AWS Cloud Engineer',
-        meta: [
-          { name: 'description', content: "Hello, I am Makeri Jerry Isuwa. A Fullstack Software Developer, AWS Cloud Engineer and IT Consultant. I architect digital experiences that solve real-world problems." },
-          { name: "twitter:card", content: "summary"},
-          { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-          { name: "twitter:site", content: "@makeri_jerry"},
-          { name: "twitter:creator", content: "@makeri_jerry"},
-          { name: "og:title", content: "Makeri Jerry Isuwa - Fullstack Software Developer | AWS Cloud Engineer"},
-          { name: "og:description", content: "I architect digital experiences that solve real-world problems. Fullstack Software Developer, AWS Cloud Engineer and IT Consultant."},
-          { name: "og:image", content: "/image.jpg"}
-        ]
-      }
-  }  
+    return {
+      title: 'Makeri, Jerry Isuwa — Fullstack Engineer — Backend Major',
+      meta: [
+        { name: 'description', content: 'Fullstack Software Developer, AWS Cloud Engineer and IT Consultant. I architect digital experiences that solve real-world problems.' },
+        { name: 'twitter:card', content: 'summary' },
+        { name: 'twitter:site', content: '@makeri_jerry' },
+        { name: 'twitter:creator', content: '@makeri_jerry' },
+        { name: 'og:title', content: 'Makeri, Jerry Isuwa — Fullstack Engineer — Backend Major' },
+        { name: 'og:description', content: 'I architect scalable systems and ship digital products. 7+ years of experience.' },
+        { name: 'og:image', content: '/image.jpg' }
+      ]
+    }
+  }
 }
 </script>
+
+<style scoped>
+.hero-inner {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  gap: 40px;
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  .hero-inner {
+    flex-direction: row;
+    align-items: center;
+    gap: 64px;
+  }
+}
+
+/* Photo */
+.hero-photo {
+  flex-shrink: 0;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.photo-glow {
+  position: absolute;
+  inset: -20px;
+  border-radius: 20px;
+  background: radial-gradient(circle, rgba(34, 211, 238, 0.1) 0%, transparent 70%);
+  pointer-events: none;
+}
+
+.photo-frame {
+  width: 180px;
+  height: 180px;
+  border-radius: 16px;
+  overflow: hidden;
+  border: 1px solid rgba(34, 211, 238, 0.2);
+  box-shadow: 0 0 40px rgba(34, 211, 238, 0.08);
+  position: relative;
+  z-index: 1;
+}
+
+@media (min-width: 768px) {
+  .photo-frame {
+    width: 240px;
+    height: 240px;
+  }
+}
+
+.photo-badge {
+  position: absolute;
+  bottom: -10px;
+  right: -10px;
+  padding: 5px 10px;
+  border-radius: 8px;
+  font-size: 0.72rem;
+  font-weight: 600;
+  background: #111;
+  border: 1px solid rgba(34, 211, 238, 0.2);
+  color: #64748B;
+  z-index: 2;
+}
+
+/* Text */
+.hero-text {
+  flex: 1;
+  text-align: center;
+  max-width: 480px;
+}
+
+@media (min-width: 768px) {
+  .hero-text {
+    text-align: left;
+  }
+}
+
+.available-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  padding: 5px 12px;
+  border-radius: 100px;
+  background: rgba(52, 211, 153, 0.07);
+  border: 1px solid rgba(52, 211, 153, 0.2);
+  margin-bottom: 20px;
+}
+
+.available-dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: #34D399;
+  box-shadow: 0 0 8px #34D399;
+  animation: pulse-dot 2s ease-in-out infinite;
+}
+
+@keyframes pulse-dot {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.5; }
+}
+
+.hero-name {
+  font-size: clamp(2rem, 6vw, 3.8rem);
+  line-height: 1.0;
+  color: #F8FAFC;
+  margin-bottom: 18px;
+  font-weight: 900;
+}
+
+.terminal-line {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 2px;
+  font-size: 0.78rem;
+  margin-bottom: 16px;
+  justify-content: center;
+}
+
+@media (min-width: 768px) {
+  .terminal-line {
+    justify-content: flex-start;
+  }
+}
+
+.hero-desc {
+  font-size: 0.95rem;
+  line-height: 1.7;
+  color: #64748B;
+  margin-bottom: 28px;
+  max-width: 420px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media (min-width: 768px) {
+  .hero-desc {
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+
+.hero-ctas {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+}
+
+@media (min-width: 768px) {
+  .hero-ctas {
+    justify-content: flex-start;
+  }
+}
+
+.btn-primary {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-size: 0.82rem;
+  font-weight: 700;
+  background: #22D3EE;
+  color: #0A0A0A;
+  text-decoration: none;
+  transition: all 150ms ease;
+}
+
+.btn-primary:hover {
+  background: #67E8F9;
+  color: #0A0A0A;
+  transform: translateY(-1px);
+}
+
+.btn-ghost {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-size: 0.82rem;
+  font-weight: 600;
+  border: 1px solid rgba(34, 211, 238, 0.25);
+  color: #22D3EE;
+  background: rgba(34, 211, 238, 0.04);
+  text-decoration: none;
+  transition: all 150ms ease;
+}
+
+.btn-ghost:hover {
+  border-color: rgba(34, 211, 238, 0.5);
+  background: rgba(34, 211, 238, 0.09);
+  color: #22D3EE;
+  transform: translateY(-1px);
+}
+
+.btn-muted {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-size: 0.82rem;
+  font-weight: 600;
+  border: 1px solid rgba(255, 255, 255, 0.07);
+  color: #64748B;
+  background: rgba(255, 255, 255, 0.02);
+  text-decoration: none;
+  transition: all 150ms ease;
+}
+
+.btn-muted:hover {
+  border-color: rgba(255, 255, 255, 0.15);
+  color: #94A3B8;
+  transform: translateY(-1px);
+}
+</style>

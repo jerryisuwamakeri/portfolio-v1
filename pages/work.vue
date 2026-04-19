@@ -1,232 +1,616 @@
 <template>
-	<div class="mb-3 mt-2">
-		<h3 class="text-2xl font-extrabold mt-3">Professional Experience</h3>
-		<p class="text-gray-600 mb-4">A timeline of my career journey and accomplishments</p>
+  <div class="work-page">
 
-		<div class="p-5 md:p-10 bg-gradient-to-r from-cyan-50 to-sky-50 w-full rounded-lg shadow-lg mb-8">
-			<div class="flex items-center mb-2">
-				<div class="bg-green-600 text-white px-3 py-1 rounded-full text-xs font-bold mr-3">Current</div>
-				<span class="text-sm font-medium text-gray-500">December 2024 – November 2025</span>
-			</div>
-			<h3 class="font-bold text-2xl text-gray-900">Technical Support Specialist & Backend Developer</h3>
-			<p class="text-md font-semibold text-gray-700 mb-2">3MTT Nigeria (Federal Ministry of Communications, Innovation and Digital Economy) — Abuja, Nigeria</p>
-			<p class="font-medium my-3 text-gray-700">
-				Provided comprehensive technical support and backend engineering bridge between the platform and programme fellows.
-			</p>
-			<ul class="list-disc list-inside text-gray-700 mb-4 space-y-1">
-				<li>Acted as engineering bridge to Fellows (client side), translating technical issues into actionable development tasks.</li>
-				<li>Provided first-line and second-line technical support, resolving platform, access, and system-related issues.</li>
-				<li>Diagnosed and troubleshot web application issues, including login errors, dashboard access problems, and course module failures.</li>
-				<li>Assisted users with account onboarding, verification, password recovery, and profile configuration.</li>
-				<li>Escalated complex technical issues to engineering teams with clear documentation and reproduction steps.</li>
-				<li>Maintained detailed support tickets, incident logs, and resolution reports for accountability and service continuity.</li>
-				<li>Delivered remote technical assistance via email, chat, and virtual meetings.</li>
-				<li>Collaborated with community managers and engineering teams to resolve widespread or recurring technical challenges.</li>
-				<li>Contributed to backend improvements and bug fixes to enhance platform stability and user experience.</li>
-				<li>Identified recurring problems and contributed to knowledge base articles, FAQs, and technical documentation.</li>
-			</ul>
-			<div class="flex flex-wrap gap-2">
-				<span class="bg-cyan-100 text-cyan-800 px-3 py-1 rounded-full text-xs font-semibold">Technical Support</span>
-				<span class="bg-cyan-100 text-cyan-800 px-3 py-1 rounded-full text-xs font-semibold">Backend Development</span>
-				<span class="bg-cyan-100 text-cyan-800 px-3 py-1 rounded-full text-xs font-semibold">Troubleshooting</span>
-				<span class="bg-cyan-100 text-cyan-800 px-3 py-1 rounded-full text-xs font-semibold">LMS</span>
-				<span class="bg-cyan-100 text-cyan-800 px-3 py-1 rounded-full text-xs font-semibold">Client Relations</span>
-				<span class="bg-cyan-100 text-cyan-800 px-3 py-1 rounded-full text-xs font-semibold">Documentation</span>
-			</div>
-		</div>
+    <!-- Header -->
+    <div class="work-header">
+      <div class="section-label">// experience</div>
+      <h2 class="page-title font-black">Where I've<br>Shipped.</h2>
+      <p class="page-subtitle">A record of companies, roles, and what I built.</p>
+    </div>
 
-		<div class="p-5 md:p-10 bg-gradient-to-r from-blue-50 to-indigo-50 w-full rounded-lg shadow-lg mb-8">
-			<span class="text-sm font-medium text-gray-500 mb-2 block">January 2025 – May 2025</span>
-			<h3 class="font-bold text-2xl text-gray-900">Backend Developer (Fueling System/CNG Centre)</h3>
-			<p class="text-md font-semibold text-gray-700 mb-2">Fuel Smart Nigeria Limited — Abuja, Nigeria (Contract)</p>
-			<p class="font-medium my-3 text-gray-700">
-				Spearheaded the development of an integrated Fueling Station and CNG Centre Management System.
-			</p>
-			<ul class="list-disc list-inside text-gray-700 mb-4 space-y-1">
-				<li>Engineered the backend using AWS, NodeJS, and MySQL for real-time station data, billing, and customer management.</li>
-				<li>Developed modules for fuel stock control, pump usage tracking, staff shifts, sales records, and CNG scheduling.</li>
-				<li>Integrated the system with fuel dispensers and hardware APIs for automated input and telemetry capture.</li>
-				<li>Designed analytics dashboards to help station managers visualize operational metrics and reports.</li>
-				<li>Enforced clean architecture principles with modular design, layered security, and reusable components.</li>
-				<li>Provided technical documentation and coordinated with hardware teams for API calibration.</li>
-			</ul>
-			<div class="flex flex-wrap gap-2">
-				<span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-xs font-semibold">AWS</span>
-				<span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-xs font-semibold">NodeJS</span>
-				<span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-xs font-semibold">MySQL</span>
-				<span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-xs font-semibold">API Integration</span>
-				<span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-xs font-semibold">System Architecture</span>
-			</div>
-		</div>
+    <!-- Timeline entries -->
+    <div class="timeline">
 
-		<div class="p-5 md:p-10 bg-gradient-to-r from-green-50 to-teal-50 w-full rounded-lg shadow-lg mb-8">
-			<span class="text-sm font-medium text-gray-500 mb-2 block">December 2024 – March 2025</span>
-			<h3 class="font-bold text-2xl text-gray-900">Server Administrator & Web Developer</h3>
-			<p class="text-md font-semibold text-gray-700 mb-2">Sustena Energy — Abuja, Nigeria (Contract)</p>
-			<p class="font-medium my-3 text-gray-700">
-				Built and deployed a digital platform to support CNG logistics, conversion scheduling, and virtual pipeline distribution.
-			</p>
-			<ul class="list-disc list-inside text-gray-700 mb-4 space-y-1">
-				<li>Implemented custom SDKs and RESTful endpoints for integration with logistics tools.</li>
-				<li>Created scalable infrastructure with data-driven dashboards for operations control.</li>
-				<li>Ensured platform compliance with security and data privacy regulations.</li>
-			</ul>
-			<div class="flex flex-wrap gap-2">
-				<span class="bg-green-100 text-green-800 px-3 py-1 rounded-full text-xs font-semibold">SDK Development</span>
-				<span class="bg-green-100 text-green-800 px-3 py-1 rounded-full text-xs font-semibold">RESTful APIs</span>
-				<span class="bg-green-100 text-green-800 px-3 py-1 rounded-full text-xs font-semibold">Infrastructure</span>
-				<span class="bg-green-100 text-green-800 px-3 py-1 rounded-full text-xs font-semibold">Security Compliance</span>
-			</div>
-		</div>
+      <!-- Women Thrive by Design -->
+      <div class="tl-entry">
+        <div class="tl-side">
+          <div class="tl-date font-mono">Apr 2026</div>
+          <span class="tl-badge recent font-mono">Latest</span>
+        </div>
+        <div class="tl-connector">
+          <div class="tl-dot" style="background:#F472B6; box-shadow:0 0 8px #F472B6;"></div>
+          <div class="tl-line"></div>
+        </div>
+        <div class="tl-card">
+          <div class="tl-card-top" style="border-color:#F472B6;"></div>
+          <div class="tl-card-body">
+            <p class="tl-role font-mono" style="color:#F472B6;">Web Developer</p>
+            <h3 class="tl-company font-black">Women Thrive by Design</h3>
+            <p class="tl-loc">
+              <a href="https://womenthrivebydesign.com" target="_blank" rel="noreferrer" class="tl-link">womenthrivebydesign.com</a>
+            </p>
+            <p class="tl-desc">Designed and built a purpose-driven digital platform empowering women through curated content, community, and design-forward experiences.</p>
+            <ul class="tl-bullets">
+              <li>Architected and built the full site from concept to production</li>
+              <li>Implemented responsive, accessible UI aligned to the brand identity</li>
+              <li>Integrated CMS for dynamic editorial content publishing</li>
+              <li>Optimised for performance, SEO, and cross-device compatibility</li>
+            </ul>
+            <div class="tl-tags">
+              <span class="tag">Web Dev</span><span class="tag">UI / UX</span><span class="tag">CMS</span><span class="tag">SEO</span><span class="tag">Performance</span>
+            </div>
+          </div>
+        </div>
+      </div>
 
-		<div class="p-5 md:p-10 bg-gradient-to-r from-purple-50 to-pink-50 w-full rounded-lg shadow-lg mb-8">
-			<span class="text-sm font-medium text-gray-500 mb-2 block">January 2024 – December 2024</span>
-			<h3 class="font-bold text-2xl text-gray-900">Server Administrator & Web Developer</h3>
-			<p class="text-md font-semibold text-gray-700 mb-2">Brand You Digital — Dublin, Ireland (Remote)</p>
-			<p class="font-medium my-3 text-gray-700">
-				Managing a suite of 500+ websites across 10+ Linux-based servers.
-			</p>
-			<ul class="list-disc list-inside text-gray-700 mb-4 space-y-1">
-				<li>Automated routine maintenance, system updates, and backups.</li>
-				<li>Diagnosed performance issues, resolved full-stack errors, and maintained DNS and SSL certificates.</li>
-				<li>Handled custom email configurations, server migrations, and incident response planning.</li>
-			</ul>
-			<div class="flex flex-wrap gap-2">
-				<span class="bg-purple-100 text-purple-800 px-3 py-1 rounded-full text-xs font-semibold">Linux</span>
-				<span class="bg-purple-100 text-purple-800 px-3 py-1 rounded-full text-xs font-semibold">Server Administration</span>
-				<span class="bg-purple-100 text-purple-800 px-3 py-1 rounded-full text-xs font-semibold">Automation</span>
-				<span class="bg-purple-100 text-purple-800 px-3 py-1 rounded-full text-xs font-semibold">DNS/SSL</span>
-				<span class="bg-purple-100 text-purple-800 px-3 py-1 rounded-full text-xs font-semibold">Troubleshooting</span>
-			</div>
-		</div>
+      <!-- Tuwanx -->
+      <div class="tl-entry">
+        <div class="tl-side">
+          <div class="tl-date font-mono">Jul '25<br>Jan '26</div>
+          <span class="tl-badge font-mono">Contract</span>
+        </div>
+        <div class="tl-connector">
+          <div class="tl-dot" style="background:#4ADE80; box-shadow:0 0 8px #4ADE80;"></div>
+          <div class="tl-line"></div>
+        </div>
+        <div class="tl-card">
+          <div class="tl-card-top" style="border-color:#4ADE80;"></div>
+          <div class="tl-card-body">
+            <p class="tl-role font-mono" style="color:#4ADE80;">Mobile App &amp; Backend Developer</p>
+            <h3 class="tl-company font-black">Tuwanx</h3>
+            <p class="tl-loc">
+              <a href="https://tuwanx.com" target="_blank" rel="noreferrer" class="tl-link">tuwanx.com</a>
+            </p>
+            <p class="tl-desc">Built the mobile application and backend infrastructure powering the Tuwanx platform from the ground up.</p>
+            <ul class="tl-bullets">
+              <li>Developed cross-platform mobile app with seamless UX across iOS and Android</li>
+              <li>Engineered scalable backend APIs and data models for real-time functionality</li>
+              <li>Implemented authentication, user management, and secure data handling</li>
+              <li>Coordinated deployment pipeline and app store release process</li>
+            </ul>
+            <div class="tl-tags">
+              <span class="tag">Mobile Dev</span><span class="tag">Backend</span><span class="tag">REST APIs</span><span class="tag">Cross-platform</span><span class="tag">Auth</span>
+            </div>
+          </div>
+        </div>
+      </div>
 
-		<div class="p-5 md:p-10 bg-gradient-to-r from-yellow-50 to-orange-50 w-full rounded-lg shadow-lg mb-8">
-			<span class="text-sm font-medium text-gray-500 mb-2 block">September 2024 – December 2024</span>
-			<h3 class="font-bold text-2xl text-gray-900">Web Developer</h3>
-			<p class="text-md font-semibold text-gray-700 mb-2">Allgreenplanet — Ibadan, Nigeria (Contract)</p>
-			<p class="font-medium my-3 text-gray-700">
-				Developed an e-commerce site selling biodegradable products and sanitary goods.
-			</p>
-			<ul class="list-disc list-inside text-gray-700 mb-4 space-y-1">
-				<li>Created RESTful APIs, integrated payment gateways, and improved order flows.</li>
-				<li>Deployed backend services for subscriptions, contact management, and product cataloging.</li>
-				<li>Collaborated on SEO enhancements and social marketing widgets.</li>
-			</ul>
-			<div class="flex flex-wrap gap-2">
-				<span class="bg-yellow-100 text-yellow-800 px-3 py-1 rounded-full text-xs font-semibold">E-commerce</span>
-				<span class="bg-yellow-100 text-yellow-800 px-3 py-1 rounded-full text-xs font-semibold">RESTful APIs</span>
-				<span class="bg-yellow-100 text-yellow-800 px-3 py-1 rounded-full text-xs font-semibold">Payment Integration</span>
-				<span class="bg-yellow-100 text-yellow-800 px-3 py-1 rounded-full text-xs font-semibold">SEO</span>
-			</div>
-		</div>
+      <!-- 3MTT Nigeria -->
+      <div class="tl-entry">
+        <div class="tl-side">
+          <div class="tl-date font-mono">Dec '24<br>Nov '25</div>
+        </div>
+        <div class="tl-connector">
+          <div class="tl-dot" style="background:#22D3EE; box-shadow:0 0 8px #22D3EE;"></div>
+          <div class="tl-line"></div>
+        </div>
+        <div class="tl-card">
+          <div class="tl-card-top" style="border-color:#22D3EE;"></div>
+          <div class="tl-card-body">
+            <p class="tl-role font-mono" style="color:#22D3EE;">Technical Support Specialist &amp; Backend Developer</p>
+            <h3 class="tl-company font-black">3MTT Nigeria</h3>
+            <p class="tl-loc">Federal Ministry of Communications &mdash; Abuja, Nigeria</p>
+            <p class="tl-desc">Engineering bridge between platform and programme fellows — translating technical issues into actionable development tasks.</p>
+            <ul class="tl-bullets">
+              <li>Provided first &amp; second-line technical support across platform, access, and system issues</li>
+              <li>Diagnosed web app failures including login errors, dashboard access, and course module bugs</li>
+              <li>Maintained detailed support tickets, incident logs, and resolution reports</li>
+              <li>Contributed to backend bug fixes and platform stability improvements</li>
+              <li>Delivered remote assistance via email, chat, and virtual meetings</li>
+            </ul>
+            <div class="tl-tags">
+              <span class="tag">Technical Support</span><span class="tag">Backend</span><span class="tag">LMS</span><span class="tag">Troubleshooting</span><span class="tag">Docs</span>
+            </div>
+          </div>
+        </div>
+      </div>
 
-		<div class="p-5 md:p-10 bg-gradient-to-r from-red-50 to-pink-50 w-full rounded-lg shadow-lg mb-8">
-			<span class="text-sm font-medium text-gray-500 mb-2 block">June 2024 – October 2024</span>
-			<h3 class="font-bold text-2xl text-gray-900">Backend Engineer</h3>
-			<p class="text-md font-semibold text-gray-700 mb-2">Lonepay Africa — Lagos, Nigeria (Contract)</p>
-			<p class="font-medium my-3 text-gray-700">
-				Designed and managed a secure payment gateway for African merchants.
-			</p>
-			<ul class="list-disc list-inside text-gray-700 mb-4 space-y-1">
-				<li>Built microservices for wallet funding, user management, and reconciliation using Node.js and TypeScript.</li>
-				<li>Conducted third-party bank and fintech API integrations.</li>
-				<li>Led DevOps strategy for continuous deployment and zero-downtime upgrades.</li>
-			</ul>
-			<div class="flex flex-wrap gap-2">
-				<span class="bg-red-100 text-red-800 px-3 py-1 rounded-full text-xs font-semibold">Node.js</span>
-				<span class="bg-red-100 text-red-800 px-3 py-1 rounded-full text-xs font-semibold">TypeScript</span>
-				<span class="bg-red-100 text-red-800 px-3 py-1 rounded-full text-xs font-semibold">Microservices</span>
-				<span class="bg-red-100 text-red-800 px-3 py-1 rounded-full text-xs font-semibold">Payment Systems</span>
-				<span class="bg-red-100 text-red-800 px-3 py-1 rounded-full text-xs font-semibold">DevOps</span>
-			</div>
-		</div>
+      <!-- Fuel Smart -->
+      <div class="tl-entry">
+        <div class="tl-side">
+          <div class="tl-date font-mono">Jan '25<br>May '25</div>
+          <span class="tl-badge font-mono">Contract</span>
+        </div>
+        <div class="tl-connector">
+          <div class="tl-dot" style="background:#60A5FA; box-shadow:0 0 8px #60A5FA;"></div>
+          <div class="tl-line"></div>
+        </div>
+        <div class="tl-card">
+          <div class="tl-card-top" style="border-color:#60A5FA;"></div>
+          <div class="tl-card-body">
+            <p class="tl-role font-mono" style="color:#60A5FA;">Backend Developer</p>
+            <h3 class="tl-company font-black">Fuel Smart Nigeria Limited</h3>
+            <p class="tl-loc">Abuja, Nigeria</p>
+            <p class="tl-desc">Spearheaded development of an integrated Fueling Station and CNG Centre Management System.</p>
+            <ul class="tl-bullets">
+              <li>Engineered backend using AWS, Node.js, and MySQL for real-time station billing and customer management</li>
+              <li>Built modules for fuel stock control, pump tracking, staff shifts, and CNG scheduling</li>
+              <li>Integrated with fuel dispensers and hardware APIs for automated telemetry</li>
+              <li>Designed analytics dashboards for operational metrics and reporting</li>
+            </ul>
+            <div class="tl-tags">
+              <span class="tag">AWS</span><span class="tag">Node.js</span><span class="tag">MySQL</span><span class="tag">API Integration</span><span class="tag">Architecture</span>
+            </div>
+          </div>
+        </div>
+      </div>
 
-		<div class="p-5 md:p-10 bg-gradient-to-r from-indigo-50 to-blue-50 w-full rounded-lg shadow-lg mb-8">
-			<span class="text-sm font-medium text-gray-500 mb-2 block">March 2024 – May 2024</span>
-			<h3 class="font-bold text-2xl text-gray-900">Backend Developer</h3>
-			<p class="text-md font-semibold text-gray-700 mb-2">Gnpay Africa — Abuja, Nigeria (Contract)</p>
-			<p class="font-medium my-3 text-gray-700">
-				Developed the backend for a Buy-Now-Pay-Later platform.
-			</p>
-			<ul class="list-disc list-inside text-gray-700 mb-4 space-y-1">
-				<li>Managed PostgreSQL database schema and indexes for performance.</li>
-				<li>Implemented KYC flows, credit scoring logic, and scheduling of payments.</li>
-				<li>Contributed to frontend TypeScript integration and API documentation.</li>
-			</ul>
-			<div class="flex flex-wrap gap-2">
-				<span class="bg-indigo-100 text-indigo-800 px-3 py-1 rounded-full text-xs font-semibold">PostgreSQL</span>
-				<span class="bg-indigo-100 text-indigo-800 px-3 py-1 rounded-full text-xs font-semibold">KYC</span>
-				<span class="bg-indigo-100 text-indigo-800 px-3 py-1 rounded-full text-xs font-semibold">TypeScript</span>
-				<span class="bg-indigo-100 text-indigo-800 px-3 py-1 rounded-full text-xs font-semibold">API Documentation</span>
-			</div>
-		</div>
+      <!-- Sustena Energy -->
+      <div class="tl-entry">
+        <div class="tl-side">
+          <div class="tl-date font-mono">Dec '24<br>Mar '25</div>
+          <span class="tl-badge font-mono">Contract</span>
+        </div>
+        <div class="tl-connector">
+          <div class="tl-dot" style="background:#34D399; box-shadow:0 0 8px #34D399;"></div>
+          <div class="tl-line"></div>
+        </div>
+        <div class="tl-card">
+          <div class="tl-card-top" style="border-color:#34D399;"></div>
+          <div class="tl-card-body">
+            <p class="tl-role font-mono" style="color:#34D399;">Server Administrator &amp; Web Developer</p>
+            <h3 class="tl-company font-black">Sustena Energy</h3>
+            <p class="tl-loc">Abuja, Nigeria</p>
+            <p class="tl-desc">Built and deployed a digital platform for CNG logistics, conversion scheduling, and virtual pipeline distribution.</p>
+            <ul class="tl-bullets">
+              <li>Implemented custom SDKs and RESTful endpoints for logistics tool integration</li>
+              <li>Created scalable infrastructure with data-driven dashboards for operations</li>
+              <li>Ensured platform compliance with security and data privacy regulations</li>
+            </ul>
+            <div class="tl-tags">
+              <span class="tag">SDK Dev</span><span class="tag">RESTful APIs</span><span class="tag">Infrastructure</span><span class="tag">Security</span>
+            </div>
+          </div>
+        </div>
+      </div>
 
-		<div class="p-5 md:p-10 bg-gradient-to-r from-teal-50 to-cyan-50 w-full rounded-lg shadow-lg mb-8">
-			<span class="text-sm font-medium text-gray-500 mb-2 block">June 2021</span>
-			<h3 class="font-bold text-2xl text-gray-900">Web Developer</h3>
-			<p class="text-md font-semibold text-gray-700 mb-2">Afrostreet Festival — Nigeria (Contract)</p>
-			<p class="font-medium my-3 text-gray-700">
-				Built digital ticketing and merchandise platform for a cultural event.
-			</p>
-			<ul class="list-disc list-inside text-gray-700 mb-4 space-y-1">
-				<li>Integrated payment APIs including Flutterwave and Paystack.</li>
-				<li>Increased average session time by 2x and reduced bounce rate by over 30%.</li>
-			</ul>
-			<div class="flex flex-wrap gap-2">
-				<span class="bg-teal-100 text-teal-800 px-3 py-1 rounded-full text-xs font-semibold">Payment Integration</span>
-				<span class="bg-teal-100 text-teal-800 px-3 py-1 rounded-full text-xs font-semibold">Flutterwave</span>
-				<span class="bg-teal-100 text-teal-800 px-3 py-1 rounded-full text-xs font-semibold">Paystack</span>
-				<span class="bg-teal-100 text-teal-800 px-3 py-1 rounded-full text-xs font-semibold">Performance Optimization</span>
-			</div>
-		</div>
+      <!-- Brand You Digital -->
+      <div class="tl-entry">
+        <div class="tl-side">
+          <div class="tl-date font-mono">Jan '24<br>Dec '24</div>
+          <span class="tl-badge font-mono">Remote</span>
+        </div>
+        <div class="tl-connector">
+          <div class="tl-dot" style="background:#A78BFA; box-shadow:0 0 8px #A78BFA;"></div>
+          <div class="tl-line"></div>
+        </div>
+        <div class="tl-card">
+          <div class="tl-card-top" style="border-color:#A78BFA;"></div>
+          <div class="tl-card-body">
+            <p class="tl-role font-mono" style="color:#A78BFA;">Server Administrator &amp; Web Developer</p>
+            <h3 class="tl-company font-black">Brand You Digital</h3>
+            <p class="tl-loc">Dublin, Ireland &mdash; Remote</p>
+            <p class="tl-desc">Managed a suite of 500+ websites across 10+ Linux-based servers.</p>
+            <ul class="tl-bullets">
+              <li>Automated routine maintenance, system updates, and backups</li>
+              <li>Diagnosed performance issues, resolved full-stack errors, maintained DNS and SSL certificates</li>
+              <li>Handled email configs, server migrations, and incident response planning</li>
+            </ul>
+            <div class="tl-tags">
+              <span class="tag">Linux</span><span class="tag">Server Admin</span><span class="tag">Automation</span><span class="tag">DNS / SSL</span>
+            </div>
+          </div>
+        </div>
+      </div>
 
-		<div class="p-5 md:p-10 bg-gradient-to-r from-gray-50 to-slate-50 w-full rounded-lg shadow-lg mb-8">
-			<span class="text-sm font-medium text-gray-500 mb-2 block">April 2020</span>
-			<h3 class="font-bold text-2xl text-gray-900">Server Administrator & Developer</h3>
-			<p class="text-md font-semibold text-gray-700 mb-2">Ladi Morals Integrated Farms Ltd — Nigeria (Contract)</p>
-			<p class="font-medium my-3 text-gray-700">
-				Launched and maintained internal systems for agricultural logistics and digital tools.
-			</p>
-			<ul class="list-disc list-inside text-gray-700 mb-4 space-y-1">
-				<li>Refactored legacy systems for performance and mobile responsiveness.</li>
-				<li>Developed tracking tools that reduced delivery error rates and time-to-resolution.</li>
-				<li>Led hiring and training of junior developers and technical support staff.</li>
-			</ul>
-			<div class="flex flex-wrap gap-2">
-				<span class="bg-gray-200 text-gray-800 px-3 py-1 rounded-full text-xs font-semibold">System Refactoring</span>
-				<span class="bg-gray-200 text-gray-800 px-3 py-1 rounded-full text-xs font-semibold">Mobile Responsiveness</span>
-				<span class="bg-gray-200 text-gray-800 px-3 py-1 rounded-full text-xs font-semibold">Logistics</span>
-				<span class="bg-gray-200 text-gray-800 px-3 py-1 rounded-full text-xs font-semibold">Team Leadership</span>
-			</div>
-		</div>
+      <!-- Lonepay Africa -->
+      <div class="tl-entry">
+        <div class="tl-side">
+          <div class="tl-date font-mono">Jun '24<br>Oct '24</div>
+          <span class="tl-badge font-mono">Contract</span>
+        </div>
+        <div class="tl-connector">
+          <div class="tl-dot" style="background:#F87171; box-shadow:0 0 8px #F87171;"></div>
+          <div class="tl-line"></div>
+        </div>
+        <div class="tl-card">
+          <div class="tl-card-top" style="border-color:#F87171;"></div>
+          <div class="tl-card-body">
+            <p class="tl-role font-mono" style="color:#F87171;">Backend Engineer</p>
+            <h3 class="tl-company font-black">Lonepay Africa</h3>
+            <p class="tl-loc">Lagos, Nigeria</p>
+            <p class="tl-desc">Designed and managed a secure payment gateway for African merchants.</p>
+            <ul class="tl-bullets">
+              <li>Built microservices for wallet funding, user management, and reconciliation using Node.js + TypeScript</li>
+              <li>Conducted third-party bank and fintech API integrations</li>
+              <li>Led DevOps strategy for continuous deployment and zero-downtime upgrades</li>
+            </ul>
+            <div class="tl-tags">
+              <span class="tag">Node.js</span><span class="tag">TypeScript</span><span class="tag">Microservices</span><span class="tag">Payments</span><span class="tag">DevOps</span>
+            </div>
+          </div>
+        </div>
+      </div>
 
-		<h3 class="text-2xl font-extrabold mt-8 mb-3">Got a Project?</h3>
-		<p class="text-gray-600 mb-4">I'm currently available for new opportunities and collaborations. Whether you need a fullstack developer, cloud architect, or technical consultant, I'm here to help bring your vision to life.</p>
-		<div class="flex gap-4 mb-8">
-			<a href="mailto:makerijerry.dev@gmail.com" class="bg-blue-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-700 transition">Shoot a mail</a>
-		</div>
-	</div>
+      <!-- Gnpay Africa -->
+      <div class="tl-entry">
+        <div class="tl-side">
+          <div class="tl-date font-mono">Mar '24<br>May '24</div>
+          <span class="tl-badge font-mono">Contract</span>
+        </div>
+        <div class="tl-connector">
+          <div class="tl-dot" style="background:#818CF8; box-shadow:0 0 8px #818CF8;"></div>
+          <div class="tl-line"></div>
+        </div>
+        <div class="tl-card">
+          <div class="tl-card-top" style="border-color:#818CF8;"></div>
+          <div class="tl-card-body">
+            <p class="tl-role font-mono" style="color:#818CF8;">Backend Developer</p>
+            <h3 class="tl-company font-black">Gnpay Africa</h3>
+            <p class="tl-loc">Abuja, Nigeria</p>
+            <p class="tl-desc">Developed the backend for a Buy-Now-Pay-Later platform.</p>
+            <ul class="tl-bullets">
+              <li>Managed PostgreSQL schema and indexes for performance optimization</li>
+              <li>Implemented KYC flows, credit scoring logic, and payment scheduling</li>
+              <li>Contributed to frontend TypeScript integration and API documentation</li>
+            </ul>
+            <div class="tl-tags">
+              <span class="tag">PostgreSQL</span><span class="tag">KYC</span><span class="tag">TypeScript</span><span class="tag">API Docs</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Afrostreet Festival -->
+      <div class="tl-entry">
+        <div class="tl-side">
+          <div class="tl-date font-mono">Jun 2021</div>
+          <span class="tl-badge font-mono">Contract</span>
+        </div>
+        <div class="tl-connector">
+          <div class="tl-dot" style="background:#2DD4BF; box-shadow:0 0 8px #2DD4BF;"></div>
+          <div class="tl-line"></div>
+        </div>
+        <div class="tl-card">
+          <div class="tl-card-top" style="border-color:#2DD4BF;"></div>
+          <div class="tl-card-body">
+            <p class="tl-role font-mono" style="color:#2DD4BF;">Web Developer</p>
+            <h3 class="tl-company font-black">Afrostreet Festival</h3>
+            <p class="tl-loc">Nigeria</p>
+            <p class="tl-desc">Built a digital ticketing and merchandise platform for a cultural event.</p>
+            <ul class="tl-bullets">
+              <li>Integrated Flutterwave and Paystack payment APIs</li>
+              <li>Increased average session time by 2× and reduced bounce rate by 30%+</li>
+            </ul>
+            <div class="tl-tags">
+              <span class="tag">Flutterwave</span><span class="tag">Paystack</span><span class="tag">Performance</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Ladi Morals Farms -->
+      <div class="tl-entry tl-entry--last">
+        <div class="tl-side">
+          <div class="tl-date font-mono">Apr 2020</div>
+          <span class="tl-badge font-mono">Contract</span>
+        </div>
+        <div class="tl-connector">
+          <div class="tl-dot" style="background:#94A3B8;"></div>
+        </div>
+        <div class="tl-card">
+          <div class="tl-card-top" style="border-color:#94A3B8;"></div>
+          <div class="tl-card-body">
+            <p class="tl-role font-mono" style="color:#94A3B8;">Server Administrator &amp; Developer</p>
+            <h3 class="tl-company font-black">Ladi Morals Integrated Farms Ltd</h3>
+            <p class="tl-loc">Nigeria</p>
+            <p class="tl-desc">Launched and maintained internal systems for agricultural logistics and digital tools.</p>
+            <ul class="tl-bullets">
+              <li>Refactored legacy systems for performance and mobile responsiveness</li>
+              <li>Built tracking tools that reduced delivery errors and resolution times</li>
+              <li>Led hiring and training of junior developers and support staff</li>
+            </ul>
+            <div class="tl-tags">
+              <span class="tag">Refactoring</span><span class="tag">Logistics</span><span class="tag">Team Lead</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- CTA -->
+    <div class="work-cta">
+      <div class="section-label">// next</div>
+      <h3 class="cta-title font-black">Your project?</h3>
+      <p class="cta-desc">Available for contracts, collaborations, and consulting engagements.</p>
+      <a href="mailto:makerijerry.dev@gmail.com?subject=Project Inquiry" class="cta-btn font-bold">
+        Shoot a mail
+        <svg style="width:14px;height:14px;flex-shrink:0;" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2.5">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
+        </svg>
+      </a>
+    </div>
+
+  </div>
 </template>
 
 <script>
-import menuLinks from '~/components/menuLinks.vue'
 export default {
-  components: {menuLinks},
   layout: 'app',
   head () {
-      return {
-        title: 'Makeri Jerry Isuwa - Professional Experience',
-        meta: [
-          { name: 'description', content: "Explore my professional journey as a Fullstack Software Developer and AWS Cloud Engineer. 7+ years of experience with 20+ completed projects." },
-          { name: "twitter:card", content: "summary"},
-          { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-          { name: "twitter:site", content: "@makeri_jerry"},
-          { name: "twitter:creator", content: "@makeri_jerry"},
-          { name: "og:title", content: "Makeri Jerry Isuwa - Professional Experience"},
-          { name: "og:description", content: "Explore my professional journey as a Fullstack Software Developer and AWS Cloud Engineer. 7+ years of experience with 20+ completed projects."},
-          { name: "og:image", content: "/image.jpg"}
-        ]
-      }
-  }  
+    return {
+      title: 'Work — Makeri, Jerry Isuwa',
+      meta: [
+        { name: 'description', content: 'Professional experience of Makeri, Jerry Isuwa — Fullstack Engineer, Backend Major (Go, JS & PHP). 7+ years across fintech, energy, e-commerce, and more.' },
+        { name: 'twitter:card', content: 'summary' },
+        { name: 'twitter:site', content: '@makeri_jerry' },
+        { name: 'og:title', content: 'Work — Makeri, Jerry Isuwa' },
+        { name: 'og:description', content: 'Professional journey as a Fullstack Engineer — Backend Major (Go, JS & PHP).' },
+        { name: 'og:image', content: '/image.jpg' }
+      ]
+    }
+  }
 }
 </script>
+
+<style scoped>
+.work-page {
+  padding-top: 12px;
+  padding-bottom: 20px;
+}
+
+.section-label {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.72rem;
+  color: #22D3EE;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.work-header {
+  margin-bottom: 40px;
+}
+
+.page-title {
+  font-size: clamp(1.8rem, 5vw, 2.8rem);
+  line-height: 1.1;
+  color: #F8FAFC;
+  margin-bottom: 10px;
+  font-weight: 900;
+}
+
+.page-subtitle {
+  font-size: 0.88rem;
+  color: #334155;
+}
+
+/* ── Timeline ── */
+.timeline {
+  margin-bottom: 48px;
+}
+
+.tl-entry {
+  display: grid;
+  grid-template-columns: 72px 24px 1fr;
+  gap: 0 0;
+  margin-bottom: 8px;
+}
+
+/* Left: date + badge */
+.tl-side {
+  padding-top: 14px;
+  padding-right: 14px;
+  text-align: right;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 6px;
+}
+
+.tl-date {
+  font-size: 0.65rem;
+  color: #334155;
+  letter-spacing: 0.04em;
+  line-height: 1.5;
+}
+
+.tl-badge {
+  font-size: 0.58rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  padding: 2px 6px;
+  border-radius: 3px;
+  background: rgba(255,255,255,0.03);
+  border: 1px solid rgba(255,255,255,0.06);
+  color: #1E293B;
+  white-space: nowrap;
+}
+
+.tl-badge.recent {
+  background: rgba(52, 211, 153, 0.08);
+  border-color: rgba(52, 211, 153, 0.2);
+  color: #34D399;
+}
+
+/* Center: dot + line */
+.tl-connector {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 16px;
+}
+
+.tl-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  flex-shrink: 0;
+  z-index: 1;
+}
+
+.tl-line {
+  width: 1px;
+  flex: 1;
+  background: rgba(255, 255, 255, 0.05);
+  margin-top: 6px;
+  min-height: 24px;
+}
+
+/* Right: card */
+.tl-card {
+  margin-left: 16px;
+  border-radius: 10px;
+  overflow: hidden;
+  background: #0F0F0F;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  margin-bottom: 16px;
+  transition: border-color 200ms ease;
+}
+
+.tl-card:hover {
+  border-color: rgba(255, 255, 255, 0.09);
+}
+
+.tl-card-top {
+  height: 2px;
+  border-top: 2px solid;
+  width: 100%;
+}
+
+.tl-card-body {
+  padding: 18px 20px 20px;
+}
+
+.tl-role {
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  margin-bottom: 4px;
+}
+
+.tl-company {
+  font-size: 1.1rem;
+  color: #F1F5F9;
+  font-weight: 800;
+  margin-bottom: 3px;
+  line-height: 1.2;
+}
+
+.tl-loc {
+  font-size: 0.78rem;
+  color: #334155;
+  margin-bottom: 12px;
+}
+
+.tl-link {
+  color: #334155;
+  text-decoration: underline;
+  text-decoration-color: rgba(255,255,255,0.08);
+  transition: color 150ms ease;
+}
+
+.tl-link:hover {
+  color: #22D3EE;
+}
+
+.tl-desc {
+  font-size: 0.85rem;
+  color: #475569;
+  line-height: 1.65;
+  margin-bottom: 12px;
+}
+
+.tl-bullets {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.tl-bullets li {
+  font-size: 0.82rem;
+  color: #3D5166;
+  line-height: 1.5;
+  padding-left: 16px;
+  position: relative;
+}
+
+.tl-bullets li::before {
+  content: '→';
+  position: absolute;
+  left: 0;
+  color: #22D3EE;
+  font-size: 0.68rem;
+  top: 2px;
+}
+
+.tl-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+
+.tag {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.63rem;
+  font-weight: 500;
+  padding: 2px 8px;
+  border-radius: 4px;
+  background: rgba(255, 255, 255, 0.02);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  color: #334155;
+  letter-spacing: 0.02em;
+}
+
+/* Mobile: collapse side column */
+@media (max-width: 480px) {
+  .tl-entry {
+    grid-template-columns: 0 20px 1fr;
+  }
+  .tl-side {
+    display: none;
+  }
+}
+
+/* CTA */
+.work-cta {
+  padding: 28px 32px;
+  border-radius: 12px;
+  background: #0F0F0F;
+  border: 1px solid rgba(34, 211, 238, 0.1);
+  margin-bottom: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.cta-title {
+  font-size: 1.5rem;
+  color: #F8FAFC;
+  font-weight: 900;
+  line-height: 1.1;
+}
+
+.cta-desc {
+  font-size: 0.85rem;
+  color: #475569;
+  margin-bottom: 10px;
+}
+
+.cta-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 22px;
+  border-radius: 8px;
+  font-size: 0.82rem;
+  font-weight: 700;
+  background: #22D3EE;
+  color: #0A0A0A;
+  text-decoration: none;
+  transition: all 150ms ease;
+  align-self: flex-start;
+  margin-top: 4px;
+}
+
+.cta-btn:hover {
+  background: #67E8F9;
+  color: #0A0A0A;
+  transform: translateY(-1px);
+}
+</style>
