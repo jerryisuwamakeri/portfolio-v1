@@ -557,36 +557,63 @@ export default {
   letter-spacing: 0.02em;
 }
 
-/* Mobile: collapse side column */
-@media (max-width: 520px) {
+/* ── Mobile: drop grid entirely ── */
+@media (max-width: 600px) {
   .tl-entry {
-    grid-template-columns: 0 16px 1fr;
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    margin-bottom: 20px;
   }
+
+  /* Show date row above the card */
   .tl-side {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 8px;
+    padding: 0 0 8px 2px;
+    text-align: left;
+    order: 0;
+  }
+
+  /* Hide the dot/line connector */
+  .tl-connector {
     display: none;
   }
+
+  /* Full-width card, no left margin */
   .tl-card {
-    margin-left: 10px;
+    margin-left: 0;
+    margin-bottom: 0;
+    order: 1;
+    width: 100%;
   }
+
   .tl-card-body {
     padding: 14px 14px 16px;
   }
+
   .tl-company {
     font-size: 0.95rem;
   }
+
   .tl-role {
     font-size: 0.65rem;
     white-space: normal;
     word-break: break-word;
   }
+
   .tl-desc {
     font-size: 0.8rem;
   }
+
   .tl-bullets li {
     font-size: 0.78rem;
   }
+
   .work-cta {
-    padding: 20px 18px;
+    padding: 20px 16px;
   }
 }
 
