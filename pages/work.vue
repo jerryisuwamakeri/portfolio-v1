@@ -75,6 +75,38 @@
         </div>
       </div>
 
+      <!-- Family Tree System -->
+      <div class="tl-entry">
+        <div class="tl-side">
+          <div class="tl-date font-mono">Dec 2025</div>
+          <span class="tl-badge font-mono">Contract</span>
+        </div>
+        <div class="tl-connector">
+          <div class="tl-dot" style="background:#FB923C; box-shadow:0 0 8px #FB923C;"></div>
+          <div class="tl-line"></div>
+        </div>
+        <div class="tl-card">
+          <div class="tl-card-top" style="border-color:#FB923C;"></div>
+          <div class="tl-card-body">
+            <p class="tl-role font-mono" style="color:#FB923C;">Fullstack Developer</p>
+            <h3 class="tl-company font-black">Imam Maliki Abdullahi Family Tree</h3>
+            <p class="tl-loc">
+              <a href="https://imammalikiabdullahifamilytree.com" target="_blank" rel="noreferrer" class="tl-link">imammalikiabdullahifamilytree.com</a>
+            </p>
+            <p class="tl-desc">Built a secure genealogy platform for the Imam Maliki Abdullahi family — enabling members to map lineage, verify identity, and access records based on role.</p>
+            <ul class="tl-bullets">
+              <li>Integrated NIN (National Identification Number) for member identity verification</li>
+              <li>Implemented granular RBAC — Admins, Family Heads, and Members with scoped permissions</li>
+              <li>Built interactive family tree UI with multi-generational relationship mapping</li>
+              <li>Secured sensitive family data with encrypted storage and audit logging</li>
+            </ul>
+            <div class="tl-tags">
+              <span class="tag">NIN Integration</span><span class="tag">RBAC</span><span class="tag">Genealogy</span><span class="tag">Security</span><span class="tag">Fullstack</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
       <!-- 3MTT Nigeria -->
       <div class="tl-entry">
         <div class="tl-side">
