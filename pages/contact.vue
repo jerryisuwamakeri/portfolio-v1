@@ -6,10 +6,7 @@
       <div class="section-label">// contact</div>
       <h2 class="page-title font-black">Say hello<span style="color:#22D3EE;">.</span></h2>
 
-      <p class="page-subtitle">
-        Open to contracts, collaborations, and anything interesting.<br>
-        I respond fast — usually within a few hours.
-      </p>
+      <p class="page-subtitle">Drop a message. I'll get back to you fast.</p>
     </div>
 
     <!-- Primary email CTA -->
@@ -71,7 +68,7 @@
     <div class="terminal-line font-mono">
       <span style="color:#22D3EE;">$</span>
       <span style="color:#1E293B; margin:0 6px;">echo</span>
-      <span style="color:#334155;">"Ready to ship. Let's talk."</span>
+      <span style="color:#334155;">"Got something in mind? Let's build it."</span>
     </div>
 
   </div>

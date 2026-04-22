@@ -61,7 +61,6 @@
               </svg>
             </nuxt-link>
             <nuxt-link :to="{ name: 'work' }" class="btn-ghost">View work</nuxt-link>
-            <a href="mailto:makerijerry.dev@gmail.com?subject=Hi Jerry, I'd like to hire you" class="btn-muted">Hire me</a>
           </div>
         </div>
 

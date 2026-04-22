@@ -17,9 +17,7 @@
           <strong>7+ years</strong> across fintech, energy, e-commerce, and social platforms.
           My edge is bridging the gap between business needs and technical execution — fast, clean, and at scale.
         </p>
-        <p class="about-bio">
-          Based in <strong>Abuja, Nigeria</strong>. Available for remote contracts worldwide.
-        </p>
+        <p class="about-bio">Based in <strong>Abuja, Nigeria</strong>.</p>
         <a href="mailto:makerijerry.dev@gmail.com?subject=Hi Jerry, I'd like to work with you" class="need-something font-mono">
           Need something?
           <svg style="width:11px;height:11px;flex-shrink:0;" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">

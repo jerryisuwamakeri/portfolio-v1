@@ -382,8 +382,8 @@
     <!-- CTA -->
     <div class="work-cta">
       <div class="section-label">// next</div>
-      <h3 class="cta-title font-black">Your project?</h3>
-      <p class="cta-desc">Available for contracts, collaborations, and consulting engagements.</p>
+      <h3 class="cta-title font-black">Need something?</h3>
+      <p class="cta-desc">Got a project or idea? Let's talk.</p>
       <a href="mailto:makerijerry.dev@gmail.com?subject=Project Inquiry" class="cta-btn font-bold">
         Shoot a mail
         <svg style="width:14px;height:14px;flex-shrink:0;" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2.5">
