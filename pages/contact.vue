@@ -6,11 +6,6 @@
       <div class="section-label">// contact</div>
       <h2 class="page-title font-black">Say hello<span style="color:#22D3EE;">.</span></h2>
 
-      <div class="available-badge">
-        <span class="available-dot"></span>
-        <span class="font-mono" style="font-size:0.68rem; letter-spacing:0.12em; text-transform:uppercase; color:#34D399;">Currently available for gigs</span>
-      </div>
-
       <p class="page-subtitle">
         Open to contracts, collaborations, and anything interesting.<br>
         I respond fast — usually within a few hours.
@@ -129,31 +124,6 @@ export default {
   margin-bottom: 16px;
 }
 
-.available-badge {
-  display: inline-flex;
-  align-items: center;
-  gap: 7px;
-  padding: 5px 12px;
-  border-radius: 100px;
-  background: rgba(52, 211, 153, 0.07);
-  border: 1px solid rgba(52, 211, 153, 0.2);
-  margin-bottom: 16px;
-}
-
-.available-dot {
-  width: 7px;
-  height: 7px;
-  border-radius: 50%;
-  background: #34D399;
-  box-shadow: 0 0 8px #34D399;
-  animation: pulse-dot 2s ease-in-out infinite;
-  flex-shrink: 0;
-}
-
-@keyframes pulse-dot {
-  0%, 100% { opacity: 1; }
-  50% { opacity: 0.4; }
-}
 
 .page-subtitle {
   font-size: 0.92rem;

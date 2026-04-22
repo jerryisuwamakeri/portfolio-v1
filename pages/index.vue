@@ -25,11 +25,13 @@
         <!-- Text side -->
         <div class="hero-text">
 
-          <!-- Available badge -->
-          <div class="available-badge">
-            <span class="available-dot"></span>
-            <span class="font-mono" style="font-size: 0.68rem; letter-spacing: 0.14em; text-transform: uppercase; color: #34D399;">Available for work</span>
-          </div>
+          <!-- Need something CTA -->
+          <a href="mailto:makerijerry.dev@gmail.com?subject=Hi Jerry, I'd like to work with you" class="need-something font-mono">
+            Need something?
+            <svg style="width:11px;height:11px;flex-shrink:0;" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M7 17l9.2-9.2M17 17V7H7"/>
+            </svg>
+          </a>
 
           <!-- Name -->
           <h1 class="hero-name font-black">
@@ -175,24 +177,21 @@ export default {
   }
 }
 
-.available-badge {
+.need-something {
   display: inline-flex;
   align-items: center;
-  gap: 7px;
-  padding: 5px 12px;
-  border-radius: 100px;
-  background: rgba(52, 211, 153, 0.07);
-  border: 1px solid rgba(52, 211, 153, 0.2);
+  gap: 6px;
+  font-size: 0.72rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #22D3EE;
+  text-decoration: none;
   margin-bottom: 20px;
+  transition: color 150ms ease;
 }
 
-.available-dot {
-  width: 7px;
-  height: 7px;
-  border-radius: 50%;
-  background: #34D399;
-  box-shadow: 0 0 8px #34D399;
-  animation: pulse-dot 2s ease-in-out infinite;
+.need-something:hover {
+  color: #67E8F9;
 }
 
 @keyframes pulse-dot {

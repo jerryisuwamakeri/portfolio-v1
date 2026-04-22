@@ -20,10 +20,12 @@
         <p class="about-bio">
           Based in <strong>Abuja, Nigeria</strong>. Available for remote contracts worldwide.
         </p>
-        <div class="available-badge">
-          <span class="available-dot"></span>
-          <span class="font-mono" style="font-size:0.68rem; letter-spacing:0.12em; text-transform:uppercase; color:#34D399;">Open to work</span>
-        </div>
+        <a href="mailto:makerijerry.dev@gmail.com?subject=Hi Jerry, I'd like to work with you" class="need-something font-mono">
+          Need something?
+          <svg style="width:11px;height:11px;flex-shrink:0;" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M7 17l9.2-9.2M17 17V7H7"/>
+          </svg>
+        </a>
       </div>
       <div class="hero-right">
         <div class="photo-glow"></div>
@@ -481,30 +483,21 @@ export default {
   font-weight: 600;
 }
 
-.available-badge {
+.need-something {
   display: inline-flex;
   align-items: center;
-  gap: 7px;
-  padding: 5px 12px;
-  border-radius: 100px;
-  background: rgba(52, 211, 153, 0.07);
-  border: 1px solid rgba(52, 211, 153, 0.2);
+  gap: 6px;
+  font-size: 0.72rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #22D3EE;
+  text-decoration: none;
   margin-top: 6px;
+  transition: color 150ms ease;
 }
 
-.available-dot {
-  width: 7px;
-  height: 7px;
-  border-radius: 50%;
-  background: #34D399;
-  box-shadow: 0 0 8px #34D399;
-  animation: pulse-dot 2s ease-in-out infinite;
-  flex-shrink: 0;
-}
-
-@keyframes pulse-dot {
-  0%, 100% { opacity: 1; }
-  50% { opacity: 0.4; }
+.need-something:hover {
+  color: #67E8F9;
 }
 
 /* Divider */
