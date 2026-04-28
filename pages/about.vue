@@ -13,11 +13,14 @@
           <span class="role-tag">API Developer</span>
         </div>
         <p class="about-bio">
-          I don't just write code — I architect digital systems built to last.
-          <strong>7+ years</strong> across fintech, energy, e-commerce, and social platforms.
-          My edge is bridging the gap between business needs and technical execution — fast, clean, and at scale.
+          I've been writing code since 2017 — what started as curiosity became a career building systems
+          that handle <strong>real money</strong>, serve <strong>real users</strong>, and run under
+          <strong>real pressure</strong>. Payment gateways. Government-scale platforms. Energy logistics.
+          Mobile apps. Most from scratch. All in production.
         </p>
-        <p class="about-bio">Based in <strong>Abuja, Nigeria</strong>.</p>
+        <p class="about-bio">
+          I don't build to impress. I build to last. Based in <strong>Abuja, Nigeria</strong>.
+        </p>
         <a href="mailto:makerijerry.dev@gmail.com?subject=Hi Jerry, I'd like to work with you" class="need-something font-mono">
           Need something?
           <svg style="width:11px;height:11px;flex-shrink:0;" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
@@ -49,6 +52,31 @@
         </div>
       </div>
     </div>
+
+    <!-- Right now -->
+    <div class="now-block">
+      <div class="section-label">// right now</div>
+      <div class="now-list">
+        <div class="now-item">
+          <span class="now-arrow font-mono">→</span>
+          <span>Maintaining backend systems for <strong>3MTT Nigeria</strong> — the Federal Government's tech upskilling programme</span>
+        </div>
+        <div class="now-item">
+          <span class="now-arrow font-mono">→</span>
+          <span>Built the <strong>Imam Maliki Abdullahi Family Tree</strong> platform with NIN identity verification &amp; role-based access</span>
+        </div>
+        <div class="now-item">
+          <span class="now-arrow font-mono">→</span>
+          <span>Shipped <strong>Women Thrive by Design</strong> — a purpose-driven digital platform empowering women</span>
+        </div>
+        <div class="now-item">
+          <span class="now-arrow font-mono">→</span>
+          <span>Taking on interesting contracts — <a href="mailto:makerijerry.dev@gmail.com" class="now-link">let's talk</a></span>
+        </div>
+      </div>
+    </div>
+
+    <div class="divider"></div>
 
     <!-- What I Do -->
     <div class="section">
@@ -708,5 +736,52 @@ export default {
   font-size: 0.68rem;
   color: #334155;
   letter-spacing: 0.04em;
+}
+
+/* ── Right now ── */
+.now-block {
+  margin-bottom: 40px;
+}
+
+.now-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.now-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  padding: 12px 0;
+  border-bottom: 1px solid rgba(255,255,255,0.04);
+  font-size: 0.85rem;
+  color: #475569;
+  line-height: 1.6;
+}
+
+.now-item:last-child {
+  border-bottom: none;
+}
+
+.now-item strong {
+  color: #94A3B8;
+  font-weight: 600;
+}
+
+.now-arrow {
+  color: #22D3EE;
+  font-size: 0.75rem;
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+.now-link {
+  color: #22D3EE;
+  text-decoration: none;
+}
+
+.now-link:hover {
+  text-decoration: underline;
 }
 </style>
