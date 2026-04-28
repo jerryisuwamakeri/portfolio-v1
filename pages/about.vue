@@ -1,305 +1,209 @@
 <template>
   <div class="about-page">
 
-    <!-- Hero intro -->
-    <div class="about-hero">
-      <div class="hero-left">
-        <div class="section-label">// about me</div>
-        <h2 class="about-name font-black">Makeri,<br><span style="color:#22D3EE;">Jerry Isuwa</span></h2>
-        <div class="role-tags">
-          <span class="role-tag">Backend Engineer</span>
-          <span class="role-tag role-tag--accent">Go · JS · PHP</span>
-          <span class="role-tag">Technical Support</span>
-          <span class="role-tag">API Developer</span>
+    <!-- Hero -->
+    <div class="a-hero">
+      <div class="a-hero-glow"></div>
+      <div class="a-hero-inner">
+        <div class="a-hero-left">
+          <p class="a-eyebrow font-mono">// about me</p>
+          <h1 class="a-title font-black">
+            MAKERI,<br>
+            <span class="a-title-cyan">JERRY</span><br>
+            ISUWA.
+          </h1>
+          <p class="a-bio">
+            Fullstack engineer, backend-focused. APIs, databases, and server
+            infrastructure in Go, JavaScript, and PHP. I also build frontends
+            and mobile apps when the project calls for it.
+          </p>
+          <p class="a-bio">
+            I've worked across fintech, energy, government tech, e-commerce, and logistics.
+            Based in <strong>Abuja, Nigeria</strong>.
+          </p>
+          <a href="mailto:makerijerry.dev@gmail.com?subject=Hi Jerry" class="a-contact font-mono">
+            Need something? →
+          </a>
         </div>
-        <p class="about-bio">
-          I've been writing code since 2017 — what started as curiosity became a career building systems
-          that handle <strong>real money</strong>, serve <strong>real users</strong>, and run under
-          <strong>real pressure</strong>. Payment gateways. Government-scale platforms. Energy logistics.
-          Mobile apps. Most from scratch. All in production.
-        </p>
-        <p class="about-bio">
-          I don't build to impress. I build to last. Based in <strong>Abuja, Nigeria</strong>.
-        </p>
-        <a href="mailto:makerijerry.dev@gmail.com?subject=Hi Jerry, I'd like to work with you" class="need-something font-mono">
-          Need something?
-          <svg style="width:11px;height:11px;flex-shrink:0;" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
-            <path d="M7 17l9.2-9.2M17 17V7H7"/>
-          </svg>
-        </a>
+        <div class="a-hero-right">
+          <div class="a-photo-halo"></div>
+          <div class="a-photo-frame">
+            <img src="/image.jpg" alt="Makeri, Jerry Isuwa" />
+          </div>
+        </div>
       </div>
-      <div class="hero-right">
-        <div class="photo-glow"></div>
-        <div class="photo-frame">
-          <img src="/image.jpg" alt="Makeri, Jerry Isuwa" />
+
+      <!-- Stats -->
+      <div class="a-stats">
+        <div class="a-stat">
+          <span class="a-stat-num font-black">10+</span>
+          <span class="a-stat-lbl font-mono">Years exp.</span>
         </div>
-        <!-- Stats floating -->
-        <div class="floating-stats">
-          <div class="fstat">
-            <span class="fstat-num font-black">7+</span>
-            <span class="fstat-lbl">Years</span>
+        <div class="a-stat-div"></div>
+        <div class="a-stat">
+          <span class="a-stat-num font-black">20+</span>
+          <span class="a-stat-lbl font-mono">Products shipped</span>
+        </div>
+        <div class="a-stat-div"></div>
+        <div class="a-stat">
+          <span class="a-stat-num font-black">8+</span>
+          <span class="a-stat-lbl font-mono">Industries</span>
+        </div>
+        <div class="a-stat-div"></div>
+        <div class="a-stat">
+          <span class="a-stat-num font-black">5</span>
+          <span class="a-stat-lbl font-mono">Countries served</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- What I build -->
+    <div class="a-section">
+      <p class="a-kicker font-mono">// services</p>
+      <h2 class="a-heading font-black">WHAT I BUILD</h2>
+      <div class="a-svc-grid">
+        <div class="a-svc">
+          <span class="a-svc-n font-mono">01</span>
+          <h3 class="a-svc-title font-bold">Backend Systems</h3>
+          <p class="a-svc-desc">APIs, microservices, and database architecture built for reliability and scale.</p>
+          <p class="a-svc-stack font-mono">Go · Node.js · PHP · MySQL · Redis · PostgreSQL</p>
+        </div>
+        <div class="a-svc">
+          <span class="a-svc-n font-mono">02</span>
+          <h3 class="a-svc-title font-bold">Fullstack Web</h3>
+          <p class="a-svc-desc">End-to-end web applications — from data models and APIs to polished frontends.</p>
+          <p class="a-svc-stack font-mono">Next.js · Vue · React · Laravel · Nuxt · Livewire</p>
+        </div>
+        <div class="a-svc">
+          <span class="a-svc-n font-mono">03</span>
+          <h3 class="a-svc-title font-bold">Mobile Apps</h3>
+          <p class="a-svc-desc">Cross-platform iOS &amp; Android apps with one codebase, backed by solid infrastructure.</p>
+          <p class="a-svc-stack font-mono">Flutter · Dart · React Native · REST APIs · Auth</p>
+        </div>
+        <div class="a-svc">
+          <span class="a-svc-n font-mono">04</span>
+          <h3 class="a-svc-title font-bold">Cloud &amp; DevOps</h3>
+          <p class="a-svc-desc">Server setup, S3 storage, deployment pipelines, and infrastructure that stays up.</p>
+          <p class="a-svc-stack font-mono">AWS · S3 · Docker · NGINX · Linux · CI/CD</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Tech stack -->
+    <div class="a-section">
+      <p class="a-kicker font-mono">// skills</p>
+      <h2 class="a-heading font-black">TECH STACK</h2>
+      <div class="a-stack-table">
+        <div class="a-stack-row">
+          <span class="a-stack-cat font-mono">Languages</span>
+          <div class="a-stack-pills">
+            <span class="pill pill--accent">Go ★</span>
+            <span class="pill pill--accent">JavaScript ★</span>
+            <span class="pill pill--accent">PHP ★</span>
+            <span class="pill">TypeScript</span>
+            <span class="pill">Dart</span>
+            <span class="pill">Java</span>
+            <span class="pill">Elixir</span>
           </div>
-          <div class="fstat-sep"></div>
-          <div class="fstat">
-            <span class="fstat-num font-black">20+</span>
-            <span class="fstat-lbl">Projects</span>
+        </div>
+        <div class="a-stack-row">
+          <span class="a-stack-cat font-mono">Frameworks</span>
+          <div class="a-stack-pills">
+            <span class="pill">Node.js</span>
+            <span class="pill">Next.js</span>
+            <span class="pill">React</span>
+            <span class="pill">Vue</span>
+            <span class="pill">Laravel</span>
+            <span class="pill">Nuxt</span>
+            <span class="pill">Livewire</span>
+            <span class="pill">React Native</span>
+            <span class="pill">Flutter</span>
+            <span class="pill">Angular</span>
+            <span class="pill">Svelte</span>
           </div>
-          <div class="fstat-sep"></div>
-          <div class="fstat">
-            <span class="fstat-num font-black">99%</span>
-            <span class="fstat-lbl">Satisfaction</span>
+        </div>
+        <div class="a-stack-row">
+          <span class="a-stack-cat font-mono">Databases</span>
+          <div class="a-stack-pills">
+            <span class="pill">PostgreSQL</span>
+            <span class="pill">MySQL</span>
+            <span class="pill">MongoDB</span>
+            <span class="pill">Redis</span>
+            <span class="pill">Firebase</span>
+            <span class="pill">Supabase</span>
+            <span class="pill">GraphQL</span>
+          </div>
+        </div>
+        <div class="a-stack-row">
+          <span class="a-stack-cat font-mono">DevOps</span>
+          <div class="a-stack-pills">
+            <span class="pill">AWS</span>
+            <span class="pill">S3</span>
+            <span class="pill">Docker</span>
+            <span class="pill">NGINX</span>
+            <span class="pill">Linux</span>
+            <span class="pill">GitHub Actions</span>
+            <span class="pill">Vercel</span>
+            <span class="pill">Netlify</span>
+          </div>
+        </div>
+        <div class="a-stack-row">
+          <span class="a-stack-cat font-mono">Tooling</span>
+          <div class="a-stack-pills">
+            <span class="pill">Postman</span>
+            <span class="pill">Swagger</span>
+            <span class="pill">Figma</span>
+            <span class="pill">Strapi</span>
+            <span class="pill">Shopify</span>
+            <span class="pill">Webflow</span>
           </div>
         </div>
       </div>
     </div>
 
-    <!-- Right now -->
-    <div class="now-block">
-      <div class="section-label">// right now</div>
-      <div class="now-list">
-        <div class="now-item">
-          <span class="now-arrow font-mono">→</span>
-          <span>Maintaining backend systems for <strong>3MTT Nigeria</strong> — the Federal Government's tech upskilling programme</span>
-        </div>
-        <div class="now-item">
-          <span class="now-arrow font-mono">→</span>
-          <span>Built the <strong>Imam Maliki Abdullahi Family Tree</strong> platform with NIN identity verification &amp; role-based access</span>
-        </div>
-        <div class="now-item">
-          <span class="now-arrow font-mono">→</span>
-          <span>Shipped <strong>Women Thrive by Design</strong> — a purpose-driven digital platform empowering women</span>
-        </div>
-        <div class="now-item">
-          <span class="now-arrow font-mono">→</span>
-          <span>Taking on interesting contracts — <a href="mailto:makerijerry.dev@gmail.com" class="now-link">let's talk</a></span>
-        </div>
-      </div>
-    </div>
-
-    <div class="divider"></div>
-
-    <!-- What I Do -->
-    <div class="section">
-      <div class="section-label">// services</div>
-      <h3 class="section-title font-bold">What I Do</h3>
-      <div class="services-grid">
-        <div class="service-card">
-          <div class="service-icon" style="color:#22D3EE;">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-              <path d="M5 12h14M12 5l7 7-7 7"/>
-            </svg>
-          </div>
-          <h4 class="service-name font-bold">Backend Engineering</h4>
-          <p class="service-desc">Scalable APIs, microservices, and server architecture in Go, Node.js, and PHP.</p>
-        </div>
-        <div class="service-card">
-          <div class="service-icon" style="color:#A78BFA;">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-              <rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/>
-            </svg>
-          </div>
-          <h4 class="service-name font-bold">Fullstack Development</h4>
-          <p class="service-desc">End-to-end web apps using Vue, React, Laravel, and modern deployment stacks.</p>
-        </div>
-        <div class="service-card">
-          <div class="service-icon" style="color:#4ADE80;">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-              <rect x="5" y="2" width="14" height="20" rx="2"/><path d="M12 18h.01"/>
-            </svg>
-          </div>
-          <h4 class="service-name font-bold">Mobile Development</h4>
-          <p class="service-desc">Cross-platform mobile apps with React Native — iOS and Android from one codebase.</p>
-        </div>
-        <div class="service-card">
-          <div class="service-icon" style="color:#F472B6;">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-              <path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/>
-            </svg>
-          </div>
-          <h4 class="service-name font-bold">Technical Support</h4>
-          <p class="service-desc">Developer advocacy, API documentation, and integration support for engineering teams.</p>
-        </div>
-      </div>
-    </div>
-
-    <div class="divider"></div>
-
-    <!-- Skills -->
-    <div class="section">
-      <div class="section-label">// skills</div>
-      <h3 class="section-title font-bold">Tech Stack</h3>
-
-      <div class="skill-rows">
-        <div class="skill-row">
-          <div class="skill-row-label font-mono">Languages</div>
-          <div class="pills">
-            <span class="skill-pill" style="border-color:rgba(34,211,238,0.3);color:#67E8F9;background:rgba(34,211,238,0.07);">Go ★</span>
-            <span class="skill-pill" style="border-color:rgba(34,211,238,0.3);color:#67E8F9;background:rgba(34,211,238,0.07);">JavaScript ★</span>
-            <span class="skill-pill" style="border-color:rgba(34,211,238,0.3);color:#67E8F9;background:rgba(34,211,238,0.07);">PHP ★</span>
-            <span class="skill-pill">TypeScript</span>
-            <span class="skill-pill">Java</span>
-            <span class="skill-pill">Elixir</span>
+    <!-- Credentials -->
+    <div class="a-section">
+      <p class="a-kicker font-mono">// education</p>
+      <h2 class="a-heading font-black">CREDENTIALS</h2>
+      <div class="a-creds">
+        <div class="a-cred">
+          <span class="a-cred-year font-mono">2023</span>
+          <div class="a-cred-body">
+            <h3 class="a-cred-title font-bold">B.Sc. Crop Genetics &amp; Engineering</h3>
+            <p class="a-cred-meta font-mono">Kaduna State University · 2017 – 2023</p>
           </div>
         </div>
-        <div class="skill-row">
-          <div class="skill-row-label font-mono">Frameworks</div>
-          <div class="pills">
-            <span class="skill-pill">Node.js</span>
-            <span class="skill-pill">React</span>
-            <span class="skill-pill">Vue</span>
-            <span class="skill-pill">Angular</span>
-            <span class="skill-pill">Svelte</span>
-            <span class="skill-pill">Laravel</span>
-            <span class="skill-pill">ASP.NET Core</span>
-            <span class="skill-pill">Ruby on Rails</span>
+        <div class="a-cred">
+          <span class="a-cred-year font-mono">2021</span>
+          <div class="a-cred-body">
+            <h3 class="a-cred-title font-bold">Careers in Commercial Banking</h3>
+            <p class="a-cred-meta font-mono">Corporate Affairs Institute · 2021</p>
           </div>
         </div>
-        <div class="skill-row">
-          <div class="skill-row-label font-mono">Databases</div>
-          <div class="pills">
-            <span class="skill-pill">PostgreSQL</span>
-            <span class="skill-pill">MySQL</span>
-            <span class="skill-pill">MongoDB</span>
-            <span class="skill-pill">Redis</span>
-            <span class="skill-pill">Firebase</span>
-            <span class="skill-pill">Supabase</span>
-            <span class="skill-pill">GraphQL</span>
-            <span class="skill-pill">SQLite</span>
-          </div>
-        </div>
-        <div class="skill-row">
-          <div class="skill-row-label font-mono">DevOps</div>
-          <div class="pills">
-            <span class="skill-pill">AWS</span>
-            <span class="skill-pill">Docker</span>
-            <span class="skill-pill">NGINX</span>
-            <span class="skill-pill">Linux</span>
-            <span class="skill-pill">GitHub Actions</span>
-            <span class="skill-pill">Vercel</span>
-            <span class="skill-pill">Netlify</span>
-            <span class="skill-pill">Heroku</span>
-          </div>
-        </div>
-        <div class="skill-row">
-          <div class="skill-row-label font-mono">Mobile &amp; CMS</div>
-          <div class="pills">
-            <span class="skill-pill">React Native</span>
-            <span class="skill-pill">Strapi</span>
-            <span class="skill-pill">Shopify</span>
-            <span class="skill-pill">Webflow</span>
-            <span class="skill-pill">Ghost</span>
-          </div>
-        </div>
-        <div class="skill-row">
-          <div class="skill-row-label font-mono">Tooling</div>
-          <div class="pills">
-            <span class="skill-pill">Postman</span>
-            <span class="skill-pill">Swagger</span>
-            <span class="skill-pill">Jest</span>
-            <span class="skill-pill">Figma</span>
-            <span class="skill-pill">Notion</span>
-            <span class="skill-pill">Tableau</span>
+        <div class="a-cred">
+          <span class="a-cred-year font-mono">2021</span>
+          <div class="a-cred-body">
+            <h3 class="a-cred-title font-bold">Accounting Fundamentals</h3>
+            <p class="a-cred-meta font-mono">Corporate Affairs Institute · 2021</p>
           </div>
         </div>
       </div>
     </div>
-
-    <div class="divider"></div>
-
-    <!-- Strengths -->
-    <div class="section">
-      <div class="section-label">// strengths</div>
-      <h3 class="section-title font-bold">What Sets Me Apart</h3>
-      <div class="strengths-grid">
-        <div class="strength-card">
-          <div class="strength-icon" style="color:#22D3EE;">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-              <path d="M13 10V3L4 14h7v7l9-11h-7z"/>
-            </svg>
-          </div>
-          <h4 class="strength-name font-bold">Fast Execution</h4>
-          <p class="strength-desc">Shipping clean, production-ready code quickly without sacrificing quality or maintainability.</p>
-        </div>
-        <div class="strength-card">
-          <div class="strength-icon" style="color:#A78BFA;">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-              <path d="M9 3H5a2 2 0 00-2 2v4m6-6h10a2 2 0 012 2v4M9 3v18m0 0h10a2 2 0 002-2v-4M9 21H5a2 2 0 01-2-2v-4m0 0h18"/>
-            </svg>
-          </div>
-          <h4 class="strength-name font-bold">Systems Thinking</h4>
-          <p class="strength-desc">Designing architectures that account for edge cases, growth, and long-term maintainability.</p>
-        </div>
-        <div class="strength-card">
-          <div class="strength-icon" style="color:#4ADE80;">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-              <path d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0z"/>
-            </svg>
-          </div>
-          <h4 class="strength-name font-bold">Team Leadership</h4>
-          <p class="strength-desc">Mentoring devs, coordinating tasks, and driving best practices for timely delivery.</p>
-        </div>
-        <div class="strength-card">
-          <div class="strength-icon" style="color:#F472B6;">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-              <path d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"/>
-            </svg>
-          </div>
-          <h4 class="strength-name font-bold">Clear Communication</h4>
-          <p class="strength-desc">Translating technical complexity into plain language — for clients, teams, and stakeholders.</p>
-        </div>
-      </div>
-    </div>
-
-    <div class="divider"></div>
-
-    <!-- Education -->
-    <div class="section">
-      <div class="section-label">// education &amp; certs</div>
-      <h3 class="section-title font-bold">Credentials</h3>
-      <div class="edu-list">
-        <div class="edu-item">
-          <div class="edu-year font-mono">2023</div>
-          <div class="edu-bar"></div>
-          <div class="edu-content">
-            <h4 class="edu-title font-bold">B.Sc. Crop Genetics &amp; Engineering</h4>
-            <span class="edu-meta font-mono">Kaduna State University · 2017 – 2023</span>
-          </div>
-        </div>
-        <div class="edu-item">
-          <div class="edu-year font-mono">2021</div>
-          <div class="edu-bar"></div>
-          <div class="edu-content">
-            <h4 class="edu-title font-bold">Careers in Commercial Banking</h4>
-            <span class="edu-meta font-mono">Corporate Affairs Institute · 2021</span>
-          </div>
-        </div>
-        <div class="edu-item">
-          <div class="edu-year font-mono">2021</div>
-          <div class="edu-bar"></div>
-          <div class="edu-content">
-            <h4 class="edu-title font-bold">Accounting Fundamentals</h4>
-            <span class="edu-meta font-mono">Corporate Affairs Institute · 2021</span>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="divider"></div>
 
     <!-- Principles -->
-    <div class="section" style="margin-bottom:60px;">
-      <div class="section-label">// principles</div>
-      <h3 class="section-title font-bold">How I Work</h3>
-      <div class="pills" style="margin-top:14px; gap:8px;">
-        <span class="principle-pill">Agile / Scrum</span>
-        <span class="principle-pill">SOLID Principles</span>
-        <span class="principle-pill">DRY</span>
-        <span class="principle-pill">KISS</span>
-        <span class="principle-pill">YAGNI</span>
-        <span class="principle-pill">TDD</span>
-        <span class="principle-pill">CI / CD</span>
-        <span class="principle-pill">Clean Architecture</span>
-        <span class="principle-pill">Code Reviews</span>
+    <div class="a-section a-section--last">
+      <p class="a-kicker font-mono">// how I work</p>
+      <h2 class="a-heading font-black">PRINCIPLES</h2>
+      <div class="a-principles">
+        <span class="prin font-mono">Agile / Scrum</span>
+        <span class="prin font-mono">SOLID</span>
+        <span class="prin font-mono">DRY</span>
+        <span class="prin font-mono">KISS</span>
+        <span class="prin font-mono">YAGNI</span>
+        <span class="prin font-mono">TDD</span>
+        <span class="prin font-mono">CI / CD</span>
+        <span class="prin font-mono">Clean Architecture</span>
+        <span class="prin font-mono">Code Reviews</span>
       </div>
     </div>
 
@@ -313,11 +217,11 @@ export default {
     return {
       title: 'About — Makeri, Jerry Isuwa',
       meta: [
-        { name: 'description', content: 'Fullstack Engineer — Backend Major (Go, JS & PHP). 7+ years building scalable digital products across fintech, energy, and e-commerce.' },
+        { name: 'description', content: 'Fullstack Engineer, Backend Major — Go, JS & PHP. 10+ years building APIs, e-commerce platforms, mobile apps, and web software.' },
         { name: 'twitter:card', content: 'summary' },
         { name: 'twitter:site', content: '@makeri_jerry' },
         { name: 'og:title', content: 'About — Makeri, Jerry Isuwa' },
-        { name: 'og:description', content: 'Fullstack Engineer, Backend Major. 7+ years, 20+ projects.' },
+        { name: 'og:description', content: 'Fullstack Engineer, Backend Major. 10+ years, 20+ projects shipped.' },
         { name: 'og:image', content: '/image.jpg' }
       ]
     }
@@ -326,462 +230,288 @@ export default {
 </script>
 
 <style scoped>
-.about-page {
-  padding-top: 12px;
-  padding-bottom: 20px;
-}
+.about-page { padding-bottom: 40px; }
 
-.section-label {
-  font-family: 'JetBrains Mono', monospace;
-  font-size: 0.72rem;
-  color: #22D3EE;
-  letter-spacing: 0.12em;
-  text-transform: uppercase;
-  margin-bottom: 10px;
-}
-
-/* ── Hero intro ── */
-.about-hero {
-  display: flex;
-  flex-direction: column;
-  gap: 32px;
-  margin-bottom: 48px;
-}
-
-@media (min-width: 600px) {
-  .about-hero {
-    flex-direction: row;
-    align-items: flex-start;
-    gap: 48px;
-  }
-}
-
-.hero-left {
-  flex: 1;
-  order: 2;
-}
-
-@media (min-width: 600px) {
-  .hero-left {
-    order: 1;
-  }
-}
-
-.hero-right {
-  flex-shrink: 0;
+/* ── Hero ── */
+.a-hero {
   position: relative;
-  order: 1;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 16px;
+  padding-bottom: 48px;
+  border-bottom: 1px solid rgba(255,255,255,0.05);
+  margin-bottom: 72px;
+  overflow: hidden;
 }
-
-@media (min-width: 600px) {
-  .hero-right {
-    order: 2;
-    align-items: flex-end;
-  }
-}
-
-.photo-glow {
+.a-hero-glow {
   position: absolute;
-  top: -16px;
-  left: -16px;
-  right: -16px;
-  bottom: -16px;
-  border-radius: 20px;
-  background: radial-gradient(circle, rgba(34, 211, 238, 0.1) 0%, transparent 70%);
+  top: -40px; right: -80px;
+  width: 500px; height: 500px;
+  background: radial-gradient(circle, rgba(34,211,238,0.06) 0%, transparent 65%);
   pointer-events: none;
 }
+.a-hero-inner {
+  display: flex;
+  align-items: flex-start;
+  gap: 48px;
+  margin-bottom: 48px;
+  flex-direction: column;
+}
+@media (min-width: 640px) {
+  .a-hero-inner { flex-direction: row; align-items: center; }
+}
+.a-hero-left { flex: 1; }
 
-.photo-frame {
-  width: 160px;
-  height: 160px;
-  border-radius: 16px;
-  overflow: hidden;
-  border: 1px solid rgba(34, 211, 238, 0.2);
-  box-shadow: 0 0 40px rgba(34, 211, 238, 0.08);
+.a-eyebrow {
+  font-size: 0.66rem;
+  color: #22D3EE;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  margin-bottom: 14px;
+}
+.a-title {
+  font-size: clamp(2.8rem, 7vw, 5rem);
+  line-height: 0.88;
+  font-weight: 900;
+  color: #F8FAFC;
+  letter-spacing: -0.025em;
+  margin-bottom: 24px;
+}
+.a-title-cyan { color: #22D3EE; }
+.a-bio {
+  font-size: 0.88rem;
+  line-height: 1.8;
+  color: #475569;
+  margin-bottom: 10px;
+  max-width: 460px;
+}
+.a-bio strong { color: #94A3B8; font-weight: 600; }
+.a-contact {
+  display: inline-block;
+  font-size: 0.68rem;
+  color: #22D3EE;
+  text-decoration: none;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  margin-top: 16px;
+  transition: opacity 150ms ease;
+}
+.a-contact:hover { opacity: 0.7; }
+
+/* Photo */
+.a-hero-right {
+  flex-shrink: 0;
   position: relative;
-  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-
-@media (min-width: 600px) {
-  .photo-frame {
-    width: 180px;
-    height: 180px;
-  }
+.a-photo-halo {
+  position: absolute;
+  inset: -24px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(34,211,238,0.09) 0%, transparent 65%);
+  pointer-events: none;
 }
-
-.photo-frame img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: center;
+.a-photo-frame {
+  width: 180px; height: 180px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 1.5px solid rgba(34,211,238,0.2);
+  box-shadow: 0 0 60px rgba(34,211,238,0.07);
+  position: relative; z-index: 1;
+}
+.a-photo-frame img {
+  width: 100%; height: 100%;
+  object-fit: cover; object-position: center;
   display: block;
 }
 
-/* Floating stats under photo */
-.floating-stats {
+/* Stats */
+.a-stats {
   display: flex;
   align-items: center;
   gap: 0;
-  background: #111;
-  border: 1px solid rgba(255, 255, 255, 0.06);
-  border-radius: 10px;
-  overflow: hidden;
-  position: relative;
-  z-index: 1;
+  flex-wrap: wrap;
 }
-
-.fstat {
+.a-stat {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  padding: 10px 16px;
-  gap: 2px;
+  align-items: flex-start;
+  gap: 4px;
+  padding: 16px 32px 16px 0;
+  min-width: 120px;
 }
-
-.fstat-num {
-  font-size: 1.1rem;
+.a-stat-num {
+  font-size: 2.2rem;
   font-weight: 900;
-  color: #22D3EE;
+  color: #F1F5F9;
   line-height: 1;
 }
-
-.fstat-lbl {
+.a-stat-lbl {
   font-size: 0.6rem;
-  color: #475569;
-  text-transform: uppercase;
-  letter-spacing: 0.08em;
-}
-
-.fstat-sep {
-  width: 1px;
-  height: 28px;
-  background: rgba(255, 255, 255, 0.06);
-}
-
-/* Name & role */
-.about-name {
-  font-size: clamp(2rem, 5vw, 3rem);
-  line-height: 1.05;
-  color: #F8FAFC;
-  font-weight: 900;
-  margin-bottom: 14px;
-}
-
-.role-tags {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 6px;
-  margin-bottom: 18px;
-}
-
-.role-tag {
-  font-family: 'JetBrains Mono', monospace;
-  font-size: 0.65rem;
-  padding: 3px 10px;
-  border-radius: 100px;
-  border: 1px solid rgba(255, 255, 255, 0.08);
-  color: #475569;
-  background: rgba(255, 255, 255, 0.02);
-  letter-spacing: 0.04em;
-  text-transform: uppercase;
-}
-
-.role-tag--accent {
-  border-color: rgba(34, 211, 238, 0.25);
-  color: #22D3EE;
-  background: rgba(34, 211, 238, 0.05);
-}
-
-.about-bio {
-  font-size: 0.88rem;
-  line-height: 1.75;
-  color: #64748B;
-  margin-bottom: 10px;
-  max-width: 480px;
-}
-
-.about-bio strong {
-  color: #94A3B8;
-  font-weight: 600;
-}
-
-.need-something {
-  display: inline-flex;
-  align-items: center;
-  gap: 6px;
-  font-size: 0.72rem;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-  color: #22D3EE;
-  text-decoration: none;
-  margin-top: 6px;
-  transition: color 150ms ease;
-}
-
-.need-something:hover {
-  color: #67E8F9;
-}
-
-/* Divider */
-.divider {
-  height: 1px;
-  background: rgba(255, 255, 255, 0.05);
-  margin: 40px 0;
-}
-
-.section {
-  margin-bottom: 0;
-}
-
-.section-title {
-  font-size: 1.2rem;
-  color: #F1F5F9;
-  margin-bottom: 20px;
-  font-weight: 700;
-}
-
-/* ── Services ── */
-.services-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 10px;
-}
-
-@media (max-width: 460px) {
-  .services-grid {
-    grid-template-columns: 1fr;
-  }
-}
-
-.service-card {
-  padding: 20px;
-  border-radius: 12px;
-  background: #0F0F0F;
-  border: 1px solid rgba(255, 255, 255, 0.04);
-  transition: border-color 180ms ease, transform 180ms ease;
-}
-
-.service-card:hover {
-  border-color: rgba(34, 211, 238, 0.12);
-  transform: translateY(-2px);
-}
-
-.service-icon {
-  width: 28px;
-  height: 28px;
-  margin-bottom: 12px;
-}
-
-.service-icon svg {
-  width: 100%;
-  height: 100%;
-}
-
-.service-name {
-  font-size: 0.88rem;
-  color: #E2E8F0;
-  font-weight: 700;
-  margin-bottom: 6px;
-}
-
-.service-desc {
-  font-size: 0.78rem;
-  color: #475569;
-  line-height: 1.65;
-}
-
-/* ── Skills rows ── */
-.skill-rows {
-  display: flex;
-  flex-direction: column;
-  gap: 0;
-}
-
-.skill-row {
-  display: grid;
-  grid-template-columns: 100px 1fr;
-  gap: 16px;
-  align-items: flex-start;
-  padding: 12px 0;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.04);
-}
-
-.skill-row:last-child {
-  border-bottom: none;
-}
-
-@media (max-width: 480px) {
-  .skill-row {
-    grid-template-columns: 1fr;
-    gap: 6px;
-  }
-}
-
-.skill-row-label {
-  font-size: 0.65rem;
   color: #334155;
   text-transform: uppercase;
   letter-spacing: 0.1em;
-  font-weight: 600;
+}
+.a-stat-div {
+  width: 1px;
+  height: 40px;
+  background: rgba(255,255,255,0.06);
+  margin-right: 32px;
+  flex-shrink: 0;
+}
+
+/* ── Sections ── */
+.a-section {
+  margin-bottom: 72px;
+}
+.a-section--last { margin-bottom: 0; }
+.a-kicker {
+  font-size: 0.66rem;
+  color: #22D3EE;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+.a-heading {
+  font-size: clamp(1.8rem, 4vw, 2.8rem);
+  font-weight: 900;
+  color: #F8FAFC;
+  line-height: 0.9;
+  letter-spacing: -0.02em;
+  margin-bottom: 36px;
+}
+
+/* Services */
+.a-svc-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1px;
+  background: rgba(255,255,255,0.04);
+  border: 1px solid rgba(255,255,255,0.04);
+  border-radius: 20px;
+  overflow: hidden;
+}
+@media (max-width: 540px) {
+  .a-svc-grid { grid-template-columns: 1fr; }
+}
+.a-svc {
+  padding: 28px 24px;
+  background: #000;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  transition: background 200ms ease;
+}
+.a-svc:hover { background: #060606; }
+.a-svc-n {
+  font-size: 0.6rem;
+  color: #22D3EE;
+  letter-spacing: 0.14em;
+  opacity: 0.6;
+}
+.a-svc-title {
+  font-size: 0.95rem;
+  color: #E2E8F0;
+  font-weight: 700;
+}
+.a-svc-desc {
+  font-size: 0.78rem;
+  color: #475569;
+  line-height: 1.7;
+  flex: 1;
+}
+.a-svc-stack {
+  font-size: 0.6rem;
+  color: #1E293B;
+  letter-spacing: 0.04em;
+  padding-top: 10px;
+  border-top: 1px solid rgba(255,255,255,0.04);
+  margin-top: 4px;
+}
+
+/* Stack table */
+.a-stack-table { display: flex; flex-direction: column; gap: 0; }
+.a-stack-row {
+  display: grid;
+  grid-template-columns: 110px 1fr;
+  gap: 24px;
+  align-items: flex-start;
+  padding: 14px 0;
+  border-bottom: 1px solid rgba(255,255,255,0.04);
+}
+.a-stack-row:last-child { border-bottom: none; }
+@media (max-width: 480px) {
+  .a-stack-row { grid-template-columns: 1fr; gap: 8px; }
+}
+.a-stack-cat {
+  font-size: 0.62rem;
+  color: #334155;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
   padding-top: 4px;
   white-space: nowrap;
 }
-
-.pills {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 6px;
-}
-
-/* ── Strengths ── */
-.strengths-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 10px;
-}
-
-@media (max-width: 400px) {
-  .strengths-grid {
-    grid-template-columns: 1fr;
-  }
-}
-
-.strength-card {
-  padding: 20px;
-  border-radius: 12px;
-  background: #0F0F0F;
-  border: 1px solid rgba(255, 255, 255, 0.04);
-  transition: border-color 180ms ease;
-}
-
-.strength-card:hover {
-  border-color: rgba(255, 255, 255, 0.08);
-}
-
-.strength-icon {
-  width: 28px;
-  height: 28px;
-  margin-bottom: 12px;
-}
-
-.strength-icon svg {
-  width: 100%;
-  height: 100%;
-}
-
-.strength-name {
-  font-size: 0.88rem;
-  color: #F1F5F9;
-  margin-bottom: 6px;
-  font-weight: 700;
-}
-
-.strength-desc {
-  font-size: 0.78rem;
-  color: #475569;
-  line-height: 1.65;
-}
-
-/* ── Education ── */
-.edu-list {
-  display: flex;
-  flex-direction: column;
-}
-
-.edu-item {
-  display: grid;
-  grid-template-columns: 44px 2px 1fr;
-  gap: 0 16px;
-  align-items: flex-start;
-  padding: 16px 0;
-}
-
-.edu-item + .edu-item .edu-bar {
-  margin-top: 0;
-}
-
-.edu-year {
-  font-size: 0.68rem;
+.a-stack-pills { display: flex; flex-wrap: wrap; gap: 6px; }
+.pill {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.65rem;
+  padding: 4px 10px;
+  border-radius: 6px;
+  border: 1px solid rgba(255,255,255,0.06);
   color: #334155;
-  letter-spacing: 0.06em;
-  padding-top: 2px;
+  background: rgba(255,255,255,0.02);
+  letter-spacing: 0.02em;
+}
+.pill--accent {
+  border-color: rgba(34,211,238,0.25);
+  color: #22D3EE;
+  background: rgba(34,211,238,0.05);
+}
+
+/* Credentials */
+.a-creds { display: flex; flex-direction: column; }
+.a-cred {
+  display: grid;
+  grid-template-columns: 52px 1fr;
+  gap: 20px;
+  align-items: flex-start;
+  padding: 18px 0;
+  border-bottom: 1px solid rgba(255,255,255,0.04);
+}
+.a-cred:last-child { border-bottom: none; }
+.a-cred-year {
+  font-size: 0.66rem;
+  color: #1E293B;
+  letter-spacing: 0.08em;
+  padding-top: 3px;
   text-align: right;
 }
-
-.edu-bar {
-  width: 2px;
-  background: rgba(34, 211, 238, 0.2);
-  border-radius: 1px;
-  align-self: stretch;
-  min-height: 40px;
-}
-
-.edu-content {
-  padding-bottom: 4px;
-}
-
-.edu-title {
-  font-size: 0.9rem;
-  color: #E2E8F0;
-  margin-bottom: 4px;
+.a-cred-title {
+  font-size: 0.92rem;
+  color: #CBD5E1;
   font-weight: 700;
-  line-height: 1.3;
+  margin-bottom: 4px;
 }
-
-.edu-meta {
-  font-size: 0.68rem;
+.a-cred-meta {
+  font-size: 0.65rem;
   color: #334155;
   letter-spacing: 0.04em;
 }
 
-/* ── Right now ── */
-.now-block {
-  margin-bottom: 40px;
+/* Principles */
+.a-principles { display: flex; flex-wrap: wrap; gap: 8px; }
+.prin {
+  font-size: 0.68rem;
+  padding: 7px 14px;
+  border-radius: 100px;
+  border: 1px solid rgba(255,255,255,0.06);
+  color: #334155;
+  background: rgba(255,255,255,0.02);
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  transition: border-color 150ms ease, color 150ms ease;
 }
-
-.now-list {
-  display: flex;
-  flex-direction: column;
-  gap: 0;
-}
-
-.now-item {
-  display: flex;
-  align-items: flex-start;
-  gap: 12px;
-  padding: 12px 0;
-  border-bottom: 1px solid rgba(255,255,255,0.04);
-  font-size: 0.85rem;
-  color: #475569;
-  line-height: 1.6;
-}
-
-.now-item:last-child {
-  border-bottom: none;
-}
-
-.now-item strong {
-  color: #94A3B8;
-  font-weight: 600;
-}
-
-.now-arrow {
+.prin:hover {
+  border-color: rgba(34,211,238,0.2);
   color: #22D3EE;
-  font-size: 0.75rem;
-  flex-shrink: 0;
-  margin-top: 2px;
-}
-
-.now-link {
-  color: #22D3EE;
-  text-decoration: none;
-}
-
-.now-link:hover {
-  text-decoration: underline;
 }
 </style>
