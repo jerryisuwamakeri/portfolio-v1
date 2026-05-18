@@ -1,137 +1,113 @@
 <template>
-  <div style="background:#000; min-height:100vh; overflow-x:hidden;">
+  <div class="site">
+    <div class="shell">
 
-    <!-- Fixed Nav -->
-    <nav class="app-nav">
-      <div class="app-nav-inner">
-        <nuxt-link :to="{name:'index'}" class="app-logo font-mono">
-          <span class="app-logo-dot"></span>
-          jerry.dev
-        </nuxt-link>
-        <menu-links />
-        <a href="mailto:makerijerry.dev@gmail.com?subject=Hi Jerry" class="app-nav-cta font-mono">
-          Say hello
-        </a>
-      </div>
-    </nav>
+      <nav class="nav">
+        <nuxt-link :to="{name:'index'}" class="nav-logo font-mono">jerry.dev</nuxt-link>
+        <div class="nav-right">
+          <div class="nav-links">
+            <nuxt-link :to="{name:'index'}" class="nav-link">Home</nuxt-link>
+            <nuxt-link :to="{name:'work'}" class="nav-link">Work</nuxt-link>
+            <nuxt-link :to="{name:'about'}" class="nav-link">About</nuxt-link>
+            <nuxt-link :to="{name:'contact'}" class="nav-link">Contact</nuxt-link>
+          </div>
+          <theme-toggle />
+        </div>
+      </nav>
 
-    <!-- Content -->
-    <div class="app-content">
-      <nuxt />
-    </div>
+      <main class="main">
+        <nuxt />
+      </main>
 
-    <!-- Footer -->
-    <footer class="app-footer">
-      <div class="app-footer-inner">
-        <span class="font-mono" style="font-size:0.65rem; color:#1E293B; letter-spacing:0.08em;">
-          © 2026 Makeri, Jerry Isuwa
-        </span>
+      <scroll-top />
+
+      <footer class="footer">
+        <span class="footer-copy font-mono">© 2026 Makeri, Jerry Isuwa</span>
         <footer-links />
-      </div>
-    </footer>
+      </footer>
 
+    </div>
   </div>
 </template>
 
 <script>
-import menuLinks from '~/components/menuLinks.vue'
 import footerLinks from '~/components/footerLinks.vue'
+import ThemeToggle from '~/components/ThemeToggle.vue'
+import ScrollTop from '~/components/ScrollTop.vue'
 export default {
-  components: { menuLinks, footerLinks }
+  components: { footerLinks, ThemeToggle, ScrollTop }
 }
 </script>
 
 <style scoped>
-.app-nav {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  z-index: 100;
-  background: rgba(0,0,0,0.85);
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
-  border-bottom: 1px solid rgba(255,255,255,0.05);
+.site { background: var(--bg); min-height: 100vh; }
+
+.shell {
+  max-width: 680px;
+  margin: 0 auto;
+  padding: 0 24px;
 }
 
-.app-nav-inner {
-  max-width: 900px;
-  margin: 0 auto;
-  padding: 0 28px;
-  height: 60px;
+.nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 16px;
+  padding: 28px 0;
+  border-bottom: 1px solid var(--bd);
+  margin-bottom: 64px;
 }
 
-.app-logo {
-  display: flex;
-  align-items: center;
-  gap: 8px;
+.nav-logo {
   font-size: 0.82rem;
-  font-weight: 700;
-  color: #F1F5F9;
+  font-weight: 600;
+  color: var(--t1);
   text-decoration: none;
-  letter-spacing: 0.04em;
+  letter-spacing: 0.02em;
+  transition: color 150ms ease;
+}
+.nav-logo:hover { color: var(--hover); }
+
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 20px;
 }
 
-.app-logo-dot {
-  width: 8px;
-  height: 8px;
-  border-radius: 50%;
-  background: #22D3EE;
-  box-shadow: 0 0 10px rgba(34,211,238,0.6);
-  animation: dot-pulse 2s ease-in-out infinite;
-  flex-shrink: 0;
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 24px;
 }
 
-@keyframes dot-pulse {
-  0%, 100% { opacity: 1; transform: scale(1); }
-  50% { opacity: 0.5; transform: scale(0.8); }
-}
-
-.app-nav-cta {
-  font-size: 0.68rem;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-  color: #000;
-  background: #22D3EE;
-  padding: 6px 14px;
-  border-radius: 6px;
+.nav-link {
+  font-size: 0.82rem;
+  color: var(--t4);
   text-decoration: none;
-  font-weight: 700;
-  transition: background 150ms ease;
-  white-space: nowrap;
-  flex-shrink: 0;
+  transition: color 150ms ease;
 }
+.nav-link:hover { color: var(--t1); }
+.nuxt-link-exact-active { color: var(--t2) !important; }
 
-.app-nav-cta:hover { background: #67E8F9; }
+.main { min-height: 60vh; }
 
-.app-content {
-  max-width: 900px;
-  margin: 0 auto;
-  padding: 88px 28px 60px;
-}
-
-.app-footer {
-  border-top: 1px solid rgba(255,255,255,0.05);
-  padding: 22px 28px;
-}
-
-.app-footer-inner {
-  max-width: 900px;
-  margin: 0 auto;
+.footer {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  padding: 36px 0 28px;
+  border-top: 1px solid var(--bd);
+  margin-top: 80px;
   flex-wrap: wrap;
   gap: 12px;
 }
 
+.footer-copy {
+  font-size: 0.7rem;
+  color: var(--t5);
+  letter-spacing: 0.04em;
+}
+
 @media (max-width: 480px) {
-  .app-nav-inner { padding: 0 18px; }
-  .app-content { padding: 80px 18px 48px; }
-  .app-footer { padding: 18px; }
+  .nav-links { gap: 16px; }
 }
 </style>

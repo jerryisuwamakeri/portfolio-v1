@@ -25,14 +25,14 @@
 
 <style scoped>
 .social-icon {
-  color: #334155;
+  color: var(--t5);
   display: flex;
   align-items: center;
   justify-content: center;
   transition: color 150ms ease, transform 150ms ease;
 }
 .social-icon:hover {
-  color: #22D3EE;
+  color: var(--t2);
   transform: translateY(-2px);
 }
 .icon {

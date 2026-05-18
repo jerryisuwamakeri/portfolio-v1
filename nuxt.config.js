@@ -27,7 +27,7 @@ export default {
   css: [
     '@/assets/css/tailwind.css',
   ],
-  plugins: [],
+  plugins: ['~/plugins/theme.client.js'],
   buildModules: [
     '@nuxtjs/tailwindcss'
   ],
