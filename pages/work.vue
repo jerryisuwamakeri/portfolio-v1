@@ -13,7 +13,7 @@
         <div class="job">
           <div class="job-head">
             <div>
-              <h2 class="job-company">Leviyah</h2>
+              <h2 class="job-company">Leviyah <a href="https://leviyah.com" target="_blank" rel="noreferrer" class="gh-link font-mono">Site ↗</a></h2>
               <p class="job-role font-mono">Fullstack Engineer</p>
             </div>
             <div class="job-right">
@@ -28,7 +28,7 @@
         <div class="job">
           <div class="job-head">
             <div>
-              <h2 class="job-company">Women Thrive by Design</h2>
+              <h2 class="job-company">Women Thrive by Design <a href="https://womenthrivebydesign.com/" target="_blank" rel="noreferrer" class="gh-link font-mono">Site ↗</a></h2>
               <p class="job-role font-mono">Web Developer</p>
             </div>
             <div class="job-right">
@@ -70,7 +70,7 @@
         <div class="job">
           <div class="job-head">
             <div>
-              <h2 class="job-company">3MTT Nigeria</h2>
+              <h2 class="job-company">3MTT Nigeria <a href="https://3mtt.nitda.gov.ng/" target="_blank" rel="noreferrer" class="gh-link font-mono">Site ↗</a></h2>
               <p class="job-role font-mono">Technical Support &amp; Backend Developer</p>
             </div>
             <div class="job-right">
@@ -84,7 +84,7 @@
         <div class="job">
           <div class="job-head">
             <div>
-              <h2 class="job-company">Fuel Smart Nigeria</h2>
+              <h2 class="job-company">Fuel Smart Nigeria <a href="https://fuelsmart.ng/" target="_blank" rel="noreferrer" class="gh-link font-mono">Site ↗</a></h2>
               <p class="job-role font-mono">Backend Developer</p>
             </div>
             <div class="job-right">
@@ -112,7 +112,7 @@
         <div class="job">
           <div class="job-head">
             <div>
-              <h2 class="job-company">Brand You Digital</h2>
+              <h2 class="job-company">Brand You Digital <a href="https://www.brandyou.ie/" target="_blank" rel="noreferrer" class="gh-link font-mono">Site ↗</a></h2>
               <p class="job-role font-mono">Server Admin &amp; Web Developer</p>
             </div>
             <div class="job-right">

@@ -45,13 +45,13 @@
           <div class="entry-list">
 
             <div class="entry">
-              <span class="entry-name">Leviyah</span>
+              <span class="entry-name">Leviyah <a href="https://leviyah.com" target="_blank" rel="noreferrer" class="entry-link font-mono">Site ↗</a></span>
               <span class="entry-meta font-mono">Fullstack Engineer · 2025</span>
               <p class="entry-desc">Full-stack e-commerce platform — Next.js, Laravel, AWS S3, Livewire admin.</p>
             </div>
 
             <div class="entry">
-              <span class="entry-name">3MTT Nigeria</span>
+              <span class="entry-name">3MTT Nigeria <a href="https://3mtt.nitda.gov.ng/" target="_blank" rel="noreferrer" class="entry-link font-mono">Site ↗</a></span>
               <span class="entry-meta font-mono">Technical Support & Backend · Dec 2024–Nov 2025</span>
               <p class="entry-desc">Backend support for the Federal Government's national tech programme.</p>
             </div>
@@ -63,7 +63,7 @@
             </div>
 
             <div class="entry">
-              <span class="entry-name">Fuel Smart Nigeria</span>
+              <span class="entry-name">Fuel Smart Nigeria <a href="https://fuelsmart.ng/" target="_blank" rel="noreferrer" class="entry-link font-mono">Site ↗</a></span>
               <span class="entry-meta font-mono">Backend Developer · Jan–May 2025</span>
               <p class="entry-desc">Real-time CNG and fueling station management system.</p>
             </div>
@@ -248,6 +248,17 @@ export default {
   font-weight: 500;
   color: var(--t2);
 }
+
+.entry-link {
+  font-size: 0.68rem;
+  font-weight: 400;
+  color: var(--t5);
+  text-decoration: none;
+  letter-spacing: 0.06em;
+  transition: color 150ms ease;
+}
+
+.entry-link:hover { color: var(--hover); }
 
 .entry-meta {
   font-size: 0.7rem;
