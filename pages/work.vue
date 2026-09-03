@@ -42,7 +42,7 @@
         <div class="job">
           <div class="job-head">
             <div>
-              <h2 class="job-company">Tuwanx</h2>
+              <h2 class="job-company">Tuwanx <a href="https://tuwanx.com" target="_blank" rel="noreferrer" class="gh-link font-mono">Site ↗</a></h2>
               <p class="job-role font-mono">Mobile App &amp; Backend Developer</p>
             </div>
             <div class="job-right">
@@ -333,15 +333,26 @@ export default {
 }
 
 .gh-link {
-  font-size: 0.68rem;
-  color: var(--t5);
+  display: inline-block;
+  font-size: 0.63rem;
+  font-weight: 600;
+  color: var(--t3);
   text-decoration: none;
-  font-weight: 400;
-  letter-spacing: 0.06em;
-  transition: color 150ms ease;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  line-height: 1;
+  padding: 4px 8px;
+  border: 1px solid var(--bd);
+  border-radius: 4px;
+  white-space: nowrap;
+  transition: color 150ms ease, border-color 150ms ease, background-color 150ms ease;
 }
 
-.gh-link:hover { color: var(--hover); }
+.gh-link:hover {
+  color: var(--hover);
+  border-color: var(--t4);
+  background-color: var(--bd2);
+}
 
 @media (max-width: 500px) {
   .job-head { flex-direction: column; gap: 6px; }

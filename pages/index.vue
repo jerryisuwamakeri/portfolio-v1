@@ -250,15 +250,29 @@ export default {
 }
 
 .entry-link {
-  font-size: 0.68rem;
-  font-weight: 400;
-  color: var(--t5);
+  display: inline-block;
+  font-size: 0.63rem;
+  font-weight: 600;
+  color: var(--t3);
   text-decoration: none;
-  letter-spacing: 0.06em;
-  transition: color 150ms ease;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  line-height: 1;
+  padding: 4px 8px;
+  margin-left: 3px;
+  border: 1px solid var(--bd);
+  border-radius: 4px;
+  white-space: nowrap;
+  position: relative;
+  top: -1px;
+  transition: color 150ms ease, border-color 150ms ease, background-color 150ms ease;
 }
 
-.entry-link:hover { color: var(--hover); }
+.entry-link:hover {
+  color: var(--hover);
+  border-color: var(--t4);
+  background-color: var(--bd2);
+}
 
 .entry-meta {
   font-size: 0.7rem;
