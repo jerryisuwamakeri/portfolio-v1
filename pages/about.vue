@@ -1,163 +1,147 @@
 <template>
   <div class="about">
+    <section>
+      <h1 class="page-title">About me</h1>
 
-    <!-- Identity -->
-    <div class="identity">
-      <img src="/image.jpg" alt="Makeri, Jerry Isuwa" class="photo" />
-      <div>
-        <h1 class="name">Makeri, Jerry Isuwa</h1>
-        <p class="role font-mono">Software Engineer · Abuja, Nigeria</p>
-      </div>
-    </div>
+      <div class="split">
+        <div class="photo">
+          <img src="/image.jpg" alt="Makeri, Jerry Isuwa" width="270" height="270" />
+        </div>
 
-    <!-- Bio -->
-    <div class="prose">
-      <p>
-        Backend engineer with 10 years of experience building APIs, databases,
-        and server infrastructure. Go, JavaScript, and PHP are my primary languages.
-        I also write TypeScript, Dart, Java, and Elixir depending on the project.
-      </p>
-      <p>
-        On the frontend I use React, Next.js, Vue, and Nuxt. For mobile, Flutter
-        and React Native. I've shipped e-commerce platforms, payment gateways,
-        government LMS systems, logistics tools, genealogy platforms, and
-        cross-platform mobile apps — most from scratch, all in production.
-      </p>
-      <p>
-        I've worked across fintech, energy, government tech, e-commerce, logistics,
-        and agricultural systems. Most projects are backend-heavy. I tend to work
-        with small teams or directly with clients, remotely.
-      </p>
-      <p>
-        <a href="mailto:makerijerry.dev@gmail.com" class="inline-link">Get in touch</a>
-        if you have a project or want to work together.
-      </p>
-    </div>
-
-    <!-- Experience summary -->
-    <div class="section">
-      <span class="label font-mono">By the numbers</span>
-      <div class="numbers">
-        <div class="num-item">
-          <span class="num-val">10</span>
-          <span class="num-lbl">Years of experience</span>
-        </div>
-        <div class="num-item">
-          <span class="num-val">20+</span>
-          <span class="num-lbl">Projects shipped</span>
-        </div>
-        <div class="num-item">
-          <span class="num-val">8+</span>
-          <span class="num-lbl">Industries</span>
-        </div>
-        <div class="num-item">
-          <span class="num-val">5</span>
-          <span class="num-lbl">Countries served</span>
+        <div class="body">
+          <div class="prose-block">
+            <p>
+              I'm Makeri, Jerry Isuwa — a fullstack developer based in Abuja, Nigeria, with 5+
+              years of experience building web apps, mobile apps, APIs, and the infrastructure
+              they run on. Go, JavaScript, and PHP are my primary languages. I also write
+              TypeScript, Dart, Java, and Elixir depending on the project.
+            </p>
+            <p>
+              On the frontend I use React, Next.js, Vue, and Nuxt. For mobile, Flutter and
+              React Native. I've shipped e-commerce platforms, payment gateways, government
+              LMS systems, logistics tools, genealogy platforms, and cross-platform mobile
+              apps — most from scratch, all in production.
+            </p>
+            <p>
+              I've worked across fintech, energy, government tech, e-commerce, logistics,
+              and agricultural systems — usually owning the product end to end. I tend to
+              work with small teams or directly with clients, remotely.
+            </p>
+            <p>
+              My approach: Agile, SOLID, DRY, KISS, TDD, CI/CD, clean architecture, code
+              reviews. Write things that work, are easy to read, and easy to delete when
+              the time comes.
+            </p>
+          </div>
+          <socials />
         </div>
       </div>
-    </div>
+    </section>
+
+    <!-- Numbers -->
+    <section class="block">
+      <ul class="numbers">
+        <li v-for="n in numbers" :key="n.label" class="num">
+          <span class="num-val">{{ n.value }}</span>
+          <span class="num-lbl subtle">{{ n.label }}</span>
+        </li>
+      </ul>
+    </section>
+
+    <!-- Focus -->
+    <section class="block">
+      <div class="sec-head">
+        <span class="sec-icon">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20zm0 18a8 8 0 1 1 0-16 8 8 0 0 1 0 16zm0-13a5 5 0 1 0 0 10 5 5 0 0 0 0-10zm0 8a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"/></svg>
+        </span>
+        <h4>What I work on</h4>
+      </div>
+      <ul class="focus">
+        <li v-for="f in focus" :key="f.title" class="focus-item">
+          <h3 class="focus-title">{{ f.title }}</h3>
+          <p class="focus-desc subtle">{{ f.desc }}</p>
+        </li>
+      </ul>
+    </section>
 
     <!-- Stack -->
-    <div class="section">
-      <span class="label font-mono">Stack</span>
-      <div class="stack-table">
-        <div class="stack-row">
-          <span class="stack-cat font-mono">Languages</span>
-          <span class="stack-val">Go, JavaScript, PHP, TypeScript, Dart, Java, Elixir</span>
-        </div>
-        <div class="stack-row">
-          <span class="stack-cat font-mono">Frontend</span>
-          <span class="stack-val">Next.js, React, Vue, Nuxt, Angular, Svelte, Livewire</span>
-        </div>
-        <div class="stack-row">
-          <span class="stack-cat font-mono">Mobile</span>
-          <span class="stack-val">Flutter, React Native</span>
-        </div>
-        <div class="stack-row">
-          <span class="stack-cat font-mono">Backend</span>
-          <span class="stack-val">Node.js, Laravel, Express, ASP.NET Core, Ruby on Rails</span>
-        </div>
-        <div class="stack-row">
-          <span class="stack-cat font-mono">Database</span>
-          <span class="stack-val">PostgreSQL, MySQL, MongoDB, Redis, Firebase, GraphQL, SQLite</span>
-        </div>
-        <div class="stack-row">
-          <span class="stack-cat font-mono">DevOps</span>
-          <span class="stack-val">AWS, S3, Docker, NGINX, Linux, GitHub Actions, Vercel, Netlify</span>
-        </div>
-        <div class="stack-row">
-          <span class="stack-cat font-mono">Tools</span>
-          <span class="stack-val">Postman, Swagger, Figma, Notion, Strapi, Shopify, Webflow</span>
-        </div>
+    <section class="block">
+      <div class="sec-head">
+        <span class="sec-icon">
+          <svg viewBox="0 0 512 512" fill="currentColor"><path d="M94.09 57L33 209.7V327h174V217h-87c-23.75 0-41-23-41-49s17.25-49 41-49h50.7l-24.8-62zm272.01 0L305 209.7V489h174V209.7L417.9 57zm25.9 62c23.8 0 41 23 41 49s-17.2 49-41 49-41-23-41-49 17.2-49 41-49zm-272 18c-11.6 0-23 12.8-23 31s11.4 31 23 31h169.9l24.8-62zm272 0c-11.6 0-23 12.8-23 31s11.4 31 23 31 23-12.8 23-31-11.4-31-23-31zM33 345v144h254V345z"/></svg>
+        </span>
+        <h4>Stack</h4>
       </div>
-    </div>
-
-    <!-- What I work on -->
-    <div class="section">
-      <span class="label font-mono">Focus areas</span>
-      <div class="focus-list">
-        <div class="focus-item">
-          <span class="focus-title">API & Backend Development</span>
-          <p class="focus-desc">RESTful APIs, microservices, authentication systems, real-time infrastructure, and database architecture.</p>
+      <dl class="stack">
+        <div v-for="s in stack" :key="s.cat" class="stack-row">
+          <dt class="stack-cat subtle">{{ s.cat }}</dt>
+          <dd class="stack-val">{{ s.items }}</dd>
         </div>
-        <div class="focus-item">
-          <span class="focus-title">Fullstack Web Applications</span>
-          <p class="focus-desc">End-to-end web products — from schema design and server logic to frontend UI, deployment, and ongoing maintenance.</p>
-        </div>
-        <div class="focus-item">
-          <span class="focus-title">Mobile Apps</span>
-          <p class="focus-desc">Cross-platform iOS and Android apps with Flutter and React Native, connected to robust backend infrastructure.</p>
-        </div>
-        <div class="focus-item">
-          <span class="focus-title">Server & Cloud Infrastructure</span>
-          <p class="focus-desc">Linux server setup and administration, AWS deployments, S3 storage, CI/CD pipelines, and Docker-based environments.</p>
-        </div>
-      </div>
-    </div>
+      </dl>
+    </section>
 
     <!-- Education -->
-    <div class="section">
-      <span class="label font-mono">Education</span>
-      <div class="edu-list">
-        <div class="edu-item">
-          <span class="edu-title">MSc <span class="edu-tag font-mono">In View</span></span>
-          <span class="edu-meta font-mono">Postgraduate studies</span>
-        </div>
-        <div class="edu-item">
-          <span class="edu-title">B. Agriculture (Crop Genetics &amp; Engineering)</span>
-          <span class="edu-meta font-mono">Kaduna State University · 2017–2023</span>
-        </div>
-        <div class="edu-item">
-          <span class="edu-title">Careers in Commercial Banking</span>
-          <span class="edu-meta font-mono">Corporate Affairs Institute · 2021</span>
-        </div>
-        <div class="edu-item">
-          <span class="edu-title">Accounting Fundamentals</span>
-          <span class="edu-meta font-mono">Corporate Affairs Institute · 2021</span>
-        </div>
+    <section class="block">
+      <div class="sec-head">
+        <span class="sec-icon">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 3L1 9l11 6 9-4.91V17h2V9L12 3zm0 13.5L5 12.6V16l7 3.8 7-3.8v-3.4l-7 3.9z"/></svg>
+        </span>
+        <h4>Education</h4>
       </div>
-    </div>
-
-    <!-- Approach -->
-    <div class="section">
-      <span class="label font-mono">Approach</span>
-      <p class="approach-text">
-        Agile, SOLID, DRY, KISS, TDD, CI/CD, clean architecture, code reviews.
-        Write things that work, are easy to read, and easy to delete when the time comes.
-      </p>
-    </div>
-
+      <ul class="edu">
+        <li v-for="e in education" :key="e.title" class="edu-item">
+          <h3 class="edu-title">
+            {{ e.title }}
+            <span v-if="e.tag" class="edu-tag">{{ e.tag }}</span>
+          </h3>
+          <span class="edu-meta subtle">{{ e.meta }}</span>
+        </li>
+      </ul>
+    </section>
   </div>
 </template>
 
 <script>
+import Socials from '~/components/Socials.vue'
 export default {
   layout: 'app',
+  components: { Socials },
+  data () {
+    return {
+      numbers: [
+        { value: '5+', label: 'Years of experience' },
+        { value: '20+', label: 'Projects shipped' },
+        { value: '8+', label: 'Industries' },
+        { value: '5', label: 'Countries served' }
+      ],
+      focus: [
+        { title: 'Fullstack Web Applications', desc: 'End-to-end web products — from schema design and server logic to frontend UI, deployment, and ongoing maintenance.' },
+        { title: 'API & Backend Development', desc: 'RESTful APIs, microservices, authentication systems, real-time infrastructure, and database architecture.' },
+        { title: 'Mobile Apps', desc: 'Cross-platform iOS and Android apps with Flutter and React Native, connected to robust backend infrastructure.' },
+        { title: 'Server & Cloud Infrastructure', desc: 'Linux server setup and administration, AWS deployments, S3 storage, CI/CD pipelines, and Docker-based environments.' }
+      ],
+      stack: [
+        { cat: 'Languages', items: 'Go, JavaScript, PHP, TypeScript, Dart, Java, Elixir' },
+        { cat: 'Frontend', items: 'Next.js, React, Vue, Nuxt, Angular, Svelte, Livewire' },
+        { cat: 'Mobile', items: 'Flutter, React Native' },
+        { cat: 'Backend', items: 'Node.js, Laravel, Express, Spring Boot, ASP.NET Core, Ruby on Rails' },
+        { cat: 'Database', items: 'PostgreSQL, MySQL, MongoDB, Redis, Firebase, GraphQL, SQLite' },
+        { cat: 'DevOps', items: 'AWS, S3, Docker, NGINX, Linux, GitHub Actions, Vercel, Netlify' },
+        { cat: 'Tools', items: 'Postman, Swagger, Figma, Notion, Strapi, Shopify, Webflow' }
+      ],
+      education: [
+        { title: 'MSc', tag: 'In view', meta: 'Postgraduate studies' },
+        { title: 'B. Agriculture (Crop Genetics & Engineering)', meta: 'Kaduna State University · 2017–2023' },
+        { title: 'Careers in Commercial Banking', meta: 'Corporate Affairs Institute · 2021' },
+        { title: 'Accounting Fundamentals', meta: 'Corporate Affairs Institute · 2021' }
+      ]
+    }
+  },
   head () {
     return {
       title: 'About — Makeri, Jerry Isuwa',
       meta: [
-        { name: 'description', content: 'Software engineer with 10 years of experience. Go, JavaScript, PHP, Dart. APIs, web apps, mobile, and cloud infrastructure.' },
+        { name: 'description', content: 'Fullstack developer with 5+ years of experience. Go, JavaScript, PHP, Dart. Web apps, mobile, APIs, and cloud infrastructure.' },
         { name: 'og:title', content: 'About — Makeri, Jerry Isuwa' },
         { name: 'og:image', content: '/image.jpg' }
       ]
@@ -167,219 +151,137 @@ export default {
 </script>
 
 <style scoped>
-.about { padding-bottom: 20px; }
+.page-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 3rem;
+  color: var(--fore-primary);
+}
 
-/* Identity */
-.identity {
+.split {
   display: flex;
-  align-items: center;
-  gap: 16px;
-  margin-bottom: 32px;
+  flex-direction: column;
+  justify-content: space-between;
 }
-
 .photo {
-  width: 64px;
-  height: 64px;
-  border-radius: 50%;
+  max-width: 200px;
+  margin-bottom: 3rem;
+}
+.photo img {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 1 / 1;
   object-fit: cover;
-  object-position: center;
+  object-position: center top;
+  border-radius: 0.5rem;
   display: block;
-  border: 1px solid var(--bd);
-  flex-shrink: 0;
 }
-
-.name {
-  font-size: 1.25rem;
-  font-weight: 600;
-  color: var(--t1);
-  letter-spacing: -0.01em;
-  margin-bottom: 4px;
-  line-height: 1.3;
+.body {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
 }
+.body .prose-block { margin-bottom: 0; }
 
-.role {
-  font-size: 0.76rem;
-  color: var(--t4);
-  letter-spacing: 0.02em;
-}
-
-/* Prose */
-.prose { margin-bottom: 52px; }
-
-.prose p {
-  font-size: 0.94rem;
-  line-height: 1.8;
-  color: var(--t3);
-  margin-bottom: 16px;
-  max-width: 580px;
-}
-.prose p:last-child { margin-bottom: 0; }
-
-.inline-link {
-  color: var(--t2);
-  text-decoration: underline;
-  text-decoration-color: var(--bd);
-  text-underline-offset: 3px;
-  transition: color 150ms ease;
-}
-.inline-link:hover { color: var(--hover); }
-
-/* Sections */
-.section { margin-bottom: 48px; }
-
-.label {
-  display: block;
-  font-size: 0.68rem;
-  color: var(--t5);
-  text-transform: uppercase;
-  letter-spacing: 0.12em;
-  margin-bottom: 18px;
-}
+.block { margin-top: 6rem; }
 
 /* Numbers */
 .numbers {
+  list-style: none;
+  padding: 0;
+  margin: 0;
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 0;
-  border: 1px solid var(--bd2);
-  border-radius: 8px;
-  overflow: hidden;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
 }
-
-@media (max-width: 500px) {
-  .numbers { grid-template-columns: repeat(2, 1fr); }
-}
-
-.num-item {
+.num {
   display: flex;
   flex-direction: column;
-  gap: 4px;
-  padding: 18px 16px;
-  border-right: 1px solid var(--bd2);
+  gap: 0.25rem;
+  padding: 1.25rem;
+  background: var(--back-card);
+  border-radius: 0.25rem;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.05);
 }
-.num-item:last-child { border-right: none; }
-
-@media (max-width: 500px) {
-  .num-item:nth-child(2) { border-right: none; }
-  .num-item:nth-child(3) { border-right: 1px solid var(--bd2); }
-  .num-item:nth-child(1),
-  .num-item:nth-child(2) {
-    border-bottom: 1px solid var(--bd2);
-  }
-}
-
 .num-val {
-  font-size: 1.4rem;
-  font-weight: 600;
-  color: var(--t1);
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: var(--accent);
   line-height: 1;
-  letter-spacing: -0.02em;
 }
+.num-lbl { font-size: 0.85rem; }
 
-.num-lbl {
-  font-size: 0.68rem;
-  color: var(--t5);
-  line-height: 1.4;
+/* Focus */
+.focus {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
 }
+.focus-title {
+  font-size: 1.125rem;
+  font-weight: 700;
+  margin-bottom: 0.25rem;
+  color: var(--fore-primary);
+}
+.focus-desc { font-size: 0.95rem; }
 
 /* Stack */
-.stack-table { display: flex; flex-direction: column; }
-
+.stack { margin: 0; }
 .stack-row {
   display: grid;
-  grid-template-columns: 90px 1fr;
-  gap: 24px;
-  padding: 12px 0;
-  border-bottom: 1px solid var(--bd2);
-  align-items: baseline;
+  grid-template-columns: 1fr;
+  gap: 0.25rem;
+  padding: 0.85rem 0;
+  border-bottom: 1px solid var(--border);
 }
-.stack-row:first-child { border-top: 1px solid var(--bd2); }
-
-.stack-cat {
-  font-size: 0.68rem;
-  color: var(--t5);
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-  padding-top: 1px;
-}
-
-.stack-val {
-  font-size: 0.84rem;
-  color: var(--t3);
-  line-height: 1.65;
-}
-
-/* Focus areas */
-.focus-list { display: flex; flex-direction: column; }
-
-.focus-item {
-  padding: 16px 0;
-  border-bottom: 1px solid var(--bd2);
-  display: flex;
-  flex-direction: column;
-  gap: 5px;
-}
-.focus-item:first-child { border-top: 1px solid var(--bd2); }
-
-.focus-title {
-  font-size: 0.88rem;
-  font-weight: 500;
-  color: var(--t2);
-}
-
-.focus-desc {
-  font-size: 0.82rem;
-  color: var(--t4);
-  line-height: 1.65;
-}
+.stack-row:first-child { border-top: 1px solid var(--border); }
+.stack-cat { font-size: 0.85rem; }
+.stack-val { margin: 0; }
 
 /* Education */
-.edu-list { display: flex; flex-direction: column; }
-
+.edu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
 .edu-item {
   display: flex;
   flex-direction: column;
-  gap: 3px;
-  padding: 14px 0;
-  border-bottom: 1px solid var(--bd2);
+  gap: 0.25rem;
+  padding: 0.85rem 0;
+  border-bottom: 1px solid var(--border);
 }
-.edu-item:first-child { border-top: 1px solid var(--bd2); }
-
+.edu-item:first-child { border-top: 1px solid var(--border); }
 .edu-title {
-  font-size: 0.88rem;
-  color: var(--t2);
-  font-weight: 500;
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--fore-primary);
   display: flex;
   align-items: center;
-  gap: 8px;
+  gap: 0.5rem;
   flex-wrap: wrap;
 }
-
 .edu-tag {
-  font-size: 0.6rem;
-  color: var(--t5);
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-  border: 1px solid var(--bd2);
-  padding: 1px 6px;
-  border-radius: 3px;
+  background: var(--back-subtle);
+  color: var(--accent);
+  padding: 0.1rem 0.6rem;
+  border-radius: 0.25rem;
+  font-size: 0.72rem;
   font-weight: 400;
 }
+.edu-meta { font-size: 0.85rem; }
 
-.edu-meta {
-  font-size: 0.7rem;
-  color: var(--t5);
-  letter-spacing: 0.02em;
-}
-
-/* Approach */
-.approach-text {
-  font-size: 0.88rem;
-  line-height: 1.75;
-  color: var(--t4);
-}
-
-@media (max-width: 480px) {
-  .stack-row { grid-template-columns: 76px 1fr; gap: 16px; }
+@media (min-width: 768px) {
+  .page-title { font-size: 1.875rem; }
+  .split { flex-direction: row-reverse; }
+  .photo { max-width: 24rem; width: 270px; margin-bottom: 0; }
+  .body { padding-right: 3rem; }
+  .numbers { grid-template-columns: repeat(4, 1fr); }
+  .focus { grid-template-columns: repeat(2, 1fr); }
+  .stack-row { grid-template-columns: 160px 1fr; gap: 1.5rem; }
 }
 </style>

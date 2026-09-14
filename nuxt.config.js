@@ -10,7 +10,7 @@ export default {
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1, viewport-fit=cover' },
-      { name: 'theme-color', content: '#0A0A0A' },
+      { name: 'theme-color', content: '#191a1f' },
     ],
     link: [
       { rel: 'icon', type: 'image/jpeg', href: '/image.jpg' },
@@ -19,11 +19,15 @@ export default {
       { rel: 'preconnect', href: 'https://fonts.gstatic.com', crossorigin: 'anonymous' },
       {
         rel: 'stylesheet',
-        href: 'https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600;700&display=swap'
+        href: 'https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,300;0,400;0,600;0,700;1,400&display=swap'
+      },
+      {
+        rel: 'stylesheet',
+        href: 'https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css'
       }
     ]
   },
-  loading: { color: '#22D3EE' },
+  loading: { color: '#42b0ff' },
   css: [
     '@/assets/css/tailwind.css',
   ],

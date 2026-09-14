@@ -1,53 +1,68 @@
 <template>
   <div class="contact">
+    <h1 class="page-title">Contact</h1>
 
-    <div class="page-head">
-      <h1 class="page-title">Contact</h1>
-      <p class="page-subtitle">Get in touch.</p>
-    </div>
-
-    <div class="prose">
+    <div class="prose-block intro">
       <p>
         The best way to reach me is by email. I check it daily and respond within a day or two.
+        Projects, contracts, consulting, or just a question — all welcome.
       </p>
     </div>
 
-    <div class="section">
-      <span class="label font-mono">Email</span>
-      <a href="mailto:makerijerry.dev@gmail.com" class="contact-link">
-        makerijerry.dev@gmail.com
-      </a>
-    </div>
+    <socials />
 
-    <div class="section">
-      <span class="label font-mono">Elsewhere</span>
-      <div class="links-list">
-        <a href="https://github.com/jerryisuwamakeri" target="_blank" rel="noreferrer" class="ext-link">
-          GitHub
-          <span class="ext-handle font-mono">jerryisuwamakeri</span>
-        </a>
-        <a href="https://linkedin.com/in/jerryisuwamakeri" target="_blank" rel="noreferrer" class="ext-link">
-          LinkedIn
-          <span class="ext-handle font-mono">jerryisuwamakeri</span>
-        </a>
-        <a href="https://twitter.com/makerijerry" target="_blank" rel="noreferrer" class="ext-link">
-          Twitter
-          <span class="ext-handle font-mono">@makerijerry</span>
-        </a>
+    <section class="block">
+      <div class="sec-head">
+        <span class="sec-icon">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M3.9 12a5 5 0 0 1 5-5h4v2h-4a3 3 0 0 0 0 6h4v2h-4a5 5 0 0 1-5-5zm6.1 1v-2h4v2h-4zm5.1-6h4a5 5 0 0 1 0 10h-4v-2h4a3 3 0 0 0 0-6h-4V7z"/></svg>
+        </span>
+        <h4>Elsewhere</h4>
       </div>
-    </div>
+      <ul class="links">
+        <li v-for="l in links" :key="l.name">
+          <a :href="l.href" :target="l.external ? '_blank' : undefined" :rel="l.external ? 'noreferrer' : undefined" class="link-row">
+            <span class="link-name">{{ l.name }}</span>
+            <span class="link-handle subtle">{{ l.handle }}</span>
+          </a>
+        </li>
+      </ul>
+    </section>
 
+    <section class="cta">
+      <h3 class="cta-title">
+        <span class="cta-icon">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20 4H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2zm0 4.24l-8 5-8-5V6l8 5 8-5v2.24z"/></svg>
+        </span>
+        Let's build something
+      </h3>
+      <div class="cta-text subtle">
+        <p>Have a product that needs building, fixing, or scaling?</p>
+      </div>
+      <a href="mailto:makerijerry.dev@gmail.com" class="btn-gradient">Say hello</a>
+    </section>
   </div>
 </template>
 
 <script>
+import Socials from '~/components/Socials.vue'
 export default {
   layout: 'app',
+  components: { Socials },
+  data () {
+    return {
+      links: [
+        { name: 'Email', handle: 'makerijerry.dev@gmail.com', href: 'mailto:makerijerry.dev@gmail.com', external: false },
+        { name: 'GitHub', handle: 'jerryisuwamakeri', href: 'https://github.com/jerryisuwamakeri', external: true },
+        { name: 'LinkedIn', handle: 'jerryisuwamakeri', href: 'https://linkedin.com/in/jerryisuwamakeri', external: true },
+        { name: 'Twitter / X', handle: '@makerijerry', href: 'https://twitter.com/makerijerry', external: true }
+      ]
+    }
+  },
   head () {
     return {
       title: 'Contact — Makeri, Jerry Isuwa',
       meta: [
-        { name: 'description', content: 'Get in touch with Makeri, Jerry Isuwa — Software Engineer based in Abuja, Nigeria.' },
+        { name: 'description', content: 'Get in touch with Makeri, Jerry Isuwa — Fullstack Developer based in Abuja, Nigeria.' },
         { name: 'og:title', content: 'Contact — Makeri, Jerry Isuwa' },
         { name: 'og:image', content: '/image.jpg' }
       ]
@@ -57,81 +72,69 @@ export default {
 </script>
 
 <style scoped>
-.contact { padding-bottom: 20px; }
-
-.page-head { margin-bottom: 32px; }
-
 .page-title {
-  font-size: 1.4rem;
-  font-weight: 600;
-  color: var(--t1);
-  letter-spacing: -0.015em;
-  margin-bottom: 6px;
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+  color: var(--fore-primary);
+}
+.intro {
+  max-width: 36rem;
+  margin-bottom: 2rem;
 }
 
-.page-subtitle {
-  font-size: 0.85rem;
-  color: #52525b;
+.block { margin-top: 5rem; }
+
+.links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
-
-.prose {
-  margin-bottom: 48px;
-}
-
-.prose p {
-  font-size: 0.94rem;
-  line-height: 1.8;
-  color: #71717a;
-}
-
-.section { margin-bottom: 40px; }
-
-.label {
-  display: block;
-  font-size: 0.7rem;
-  color: var(--t5);
-  text-transform: uppercase;
-  letter-spacing: 0.12em;
-  margin-bottom: 14px;
-}
-
-.contact-link {
-  font-size: 0.95rem;
-  color: var(--t2);
-  text-decoration: none;
-  font-weight: 500;
-  transition: color 150ms ease;
-}
-
-.contact-link:hover { color: var(--hover); }
-
-.links-list {
-  display: flex;
-  flex-direction: column;
-  gap: 0;
-}
-
-.ext-link {
+.link-row {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 13px 0;
-  border-bottom: 1px solid var(--bd2);
-  text-decoration: none;
-  font-size: 0.88rem;
-  color: var(--t2);
-  font-weight: 500;
+  gap: 1rem;
+  padding: 0.85rem 0;
+  border-bottom: 1px solid var(--border);
   transition: color 150ms ease;
 }
+.links li:first-child .link-row { border-top: 1px solid var(--border); }
+.link-name { font-weight: 700; color: var(--fore-primary); transition: color 150ms ease; }
+.link-row:hover .link-name { color: var(--accent); }
+.link-handle { font-size: 0.875rem; text-align: right; word-break: break-word; }
 
-.ext-link:first-child { border-top: 1px solid var(--bd2); }
+.cta {
+  height: 18rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 6rem 0 2rem;
+  text-align: center;
+}
+.cta-title {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 1.875rem;
+  font-weight: 700;
+}
+.cta-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: var(--back-subtle);
+  color: var(--accent);
+}
+.cta-icon svg { width: 28px; height: 28px; }
+.cta-text { margin: 0.75rem 0; }
+.cta .btn-gradient { margin-top: 2rem; }
 
-.ext-link:hover { color: var(--t1); }
-
-.ext-handle {
-  font-size: 0.72rem;
-  color: var(--t5);
-  letter-spacing: 0.02em;
-  font-weight: 400;
+@media (min-width: 768px) {
+  .page-title { font-size: 1.875rem; }
 }
 </style>

@@ -31,25 +31,20 @@ export default {
 <style scoped>
 .scroll-top {
   position: fixed;
-  bottom: 28px;
-  right: 28px;
+  bottom: 24px;
+  right: 24px;
   width: 36px;
   height: 36px;
-  border-radius: 8px;
-  border: 1px solid var(--bd);
-  background: var(--bg);
-  color: var(--t4);
+  border-radius: 50%;
+  border: 1px solid var(--border);
+  background: var(--back-subtle);
+  color: var(--fore-primary);
   display: flex;
   align-items: center;
   justify-content: center;
   cursor: pointer;
-  transition: color 150ms ease, border-color 150ms ease, opacity 150ms ease;
-  opacity: 0.8;
-  z-index: 50;
+  transition: color 150ms ease, transform 150ms ease;
+  z-index: 40;
 }
-.scroll-top:hover {
-  color: var(--t1);
-  border-color: var(--t5);
-  opacity: 1;
-}
+.scroll-top:hover { color: var(--accent); transform: translateY(-2px); }
 </style>

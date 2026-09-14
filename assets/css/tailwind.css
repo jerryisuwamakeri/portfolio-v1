@@ -3,45 +3,61 @@
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
 
-/* ── Theme tokens ── */
+/* ──────────────────────────────────────────────
+   Theme tokens — dark by default, html.light flips
+   ────────────────────────────────────────────── */
 :root {
-  --bg:    #000000;
-  --t1:    #e4e4e7;
-  --t2:    #a1a1aa;
-  --t3:    #71717a;
-  --t4:    #52525b;
-  --t5:    #3f3f46;
-  --bd:    rgba(255,255,255,0.07);
-  --bd2:   rgba(255,255,255,0.05);
-  --hover: #ffffff;
+  --fore-primary:   hsla(214, 32%, 91%, 1);
+  --fore-secondary: hsla(214, 32%, 91%, 1);
+  --fore-subtle:    hsla(214, 20%, 69%, 1);
+
+  --back-primary:   hsla(228, 10%, 11%, 1);
+  --back-secondary: hsla(221, 39%, 8%, 1);
+  --back-subtle:    hsla(221, 39%, 16%, 1);
+  --back-card:      hsla(215, 28%, 17%, 1);
+
+  --accent:         hsla(201, 100%, 63%, 1);
+  --second-accent:  hsla(243, 78%, 68%, 1);
+  --back-accent:    hsla(172, 67%, 70%, 1);
+
+  --border:         hsla(214, 20%, 69%, 0.3);
+  --border-strong:  hsla(0, 0%, 100%, 0.18);
 }
 
 html.light {
-  --bg:    #fafafa;
-  --t1:    #18181b;
-  --t2:    #27272a;
-  --t3:    #52525b;
-  --t4:    #71717a;
-  --t5:    #a1a1aa;
-  --bd:    rgba(0,0,0,0.08);
-  --bd2:   rgba(0,0,0,0.05);
-  --hover: #000000;
+  --fore-primary:   hsla(240, 6%, 10%, 1);
+  --fore-secondary: hsla(240, 4%, 16%, 1);
+  --fore-subtle:    hsla(218, 17%, 35%, 1);
+
+  --back-primary:   hsla(240, 5%, 96%, 1);
+  --back-secondary: hsla(240, 6%, 93%, 1);
+  --back-subtle:    hsla(210, 38%, 92%, 1);
+  --back-card:      #ffffff;
+
+  --accent:         hsla(221, 100%, 63%, 1);
+  --second-accent:  hsla(243, 78%, 68%, 1);
+  --back-accent:    hsla(217, 100%, 81%, 1);
+
+  --border:         hsla(214, 20%, 50%, 0.3);
+  --border-strong:  hsla(0, 0%, 0%, 0.14);
 }
 
 html {
-  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  font-family: 'Public Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
   font-size: 16px;
-  background-color: var(--bg);
-  color: var(--t1);
+  background-color: var(--back-primary);
+  color: var(--fore-primary);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  box-sizing: border-box;
   scroll-behavior: smooth;
   transition: background-color 200ms ease, color 200ms ease;
 }
 
 body {
-  background-color: var(--bg);
+  background-color: var(--back-primary);
+  color: var(--fore-primary);
+  overflow-x: hidden;
+  line-height: 1.6;
 }
 
 *, *:before, *:after {
@@ -49,83 +65,174 @@ body {
   margin: 0;
 }
 
-::-webkit-scrollbar { width: 5px; }
-::-webkit-scrollbar-track { background: var(--bg); }
-::-webkit-scrollbar-thumb { background: var(--t5); border-radius: 3px; }
-::-webkit-scrollbar-thumb:hover { background: var(--t3); }
+::selection {
+  background: var(--accent);
+  color: var(--back-primary);
+}
 
 a {
-  color: var(--t4);
-  transition: color 150ms ease-in-out;
+  color: inherit;
+  text-decoration: none;
+  transition: color 150ms ease, opacity 150ms ease;
 }
-a:hover { color: var(--hover); }
 a:focus { outline: none; }
+a:focus-visible, button:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+  border-radius: 2px;
+}
 
 .page-enter-active,
-.page-leave-active,
-.layout-enter-active,
-.layout-leave-active {
-  transition: opacity 0.4s ease;
+.page-leave-active {
+  transition: opacity 0.25s ease;
 }
 .page-enter,
-.page-leave-active,
-.layout-enter,
-.layout-leave-active {
+.page-leave-active {
   opacity: 0;
 }
 
-/* Dot grid background */
-.dot-grid {
-  background-image: radial-gradient(rgba(255, 255, 255, 0.035) 1px, transparent 1px);
-  background-size: 26px 26px;
+/* ──────────────────────────────────────────────
+   Shared primitives
+   ────────────────────────────────────────────── */
+
+/* Nav item with gradient underline that sweeps in on hover */
+.nav--item {
+  position: relative;
+  color: var(--fore-subtle);
+  letter-spacing: 0.025em;
+  transition: color 150ms ease;
+}
+.nav--item::after {
+  content: '';
+  position: absolute;
+  height: 2px;
+  background: linear-gradient(200deg, var(--accent), var(--second-accent));
+  border-radius: 50px;
+  bottom: -1.5px;
+  left: 0;
+  right: 0;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 150ms ease-in-out;
+}
+.nav--item:hover::after,
+.nav--item:focus::after {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+.nav--item.nuxt-link-exact-active,
+.nav--item.is-active {
+  color: var(--fore-primary);
+  font-weight: 700;
 }
 
-/* Section label style */
-.section-label {
-  font-family: 'JetBrains Mono', monospace;
-  font-size: 0.75rem;
-  color: #22D3EE;
-  text-transform: uppercase;
-  letter-spacing: 0.15em;
-}
-
-/* Skill pill */
-.skill-pill {
+/* Section title with the short underline (h3 in reference) */
+.sec-title {
   display: inline-block;
-  padding: 3px 10px;
-  border-radius: 4px;
-  font-family: 'JetBrains Mono', monospace;
-  font-size: 0.72rem;
-  font-weight: 500;
-  background: rgba(34, 211, 238, 0.06);
-  border: 1px solid rgba(34, 211, 238, 0.15);
-  color: #94A3B8;
-  margin: 3px 3px 3px 0;
-  transition: all 150ms ease;
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: var(--fore-primary);
+  border-bottom: 1px solid var(--border);
+  padding-bottom: 2px;
+  margin-bottom: 2rem;
 }
-.skill-pill:hover {
-  background: rgba(34, 211, 238, 0.12);
-  color: #22D3EE;
-  border-color: rgba(34, 211, 238, 0.35);
+@media (min-width: 768px) {
+  .sec-title { font-size: 1.875rem; }
 }
 
-/* Principle pill */
-.principle-pill {
+/* Icon-in-circle + accent heading (Toolbox / Works / Posts pattern) */
+.sec-head {
+  display: flex;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+.sec-head .sec-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: var(--back-subtle);
+  color: var(--accent);
+  margin-right: 1rem;
+  flex-shrink: 0;
+}
+.sec-head .sec-icon svg { width: 22px; height: 22px; }
+.sec-head h2, .sec-head h4 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--accent);
+}
+
+/* Outlined accent button (the "Resume" button) */
+.btn-outline {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.25rem 1rem;
+  border: 2px solid var(--accent);
+  border-radius: 0.25rem;
+  color: var(--fore-primary);
+  font-size: 1rem;
+  cursor: pointer;
+  transition: color 150ms ease;
+}
+.btn-outline:hover { color: var(--accent); }
+.btn-outline svg { width: 16px; height: 16px; }
+
+/* Gradient CTA button (the "Say hello" button) */
+.btn-gradient {
   display: inline-block;
-  padding: 4px 12px;
-  border-radius: 4px;
-  font-size: 0.78rem;
-  font-weight: 500;
-  background: rgba(255, 255, 255, 0.04);
-  border: 1px solid rgba(255, 255, 255, 0.07);
-  color: #64748B;
-  margin: 3px 4px 3px 0;
+  color: #fff;
+  padding: 0.875rem 4rem;
+  font-size: 1.25rem;
+  border-radius: 0.25rem;
+  background-image: linear-gradient(90deg, var(--accent), #a78bfa);
+  transition: background-image 200ms ease, opacity 150ms ease;
+}
+.btn-gradient:hover {
+  background-image: linear-gradient(90deg, #ec4899, #eab308);
 }
 
-/* Glow utilities */
-.glow-cyan {
-  box-shadow: 0 0 24px rgba(34, 211, 238, 0.18), 0 0 48px rgba(34, 211, 238, 0.08);
+/* Arrow link ("→ Learn more") */
+.arrow-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.25rem;
+  color: var(--accent);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+  transition: opacity 150ms ease, transform 150ms ease;
 }
+.arrow-link:hover {
+  opacity: 0.7;
+  transform: translateX(4px);
+}
+.arrow-link svg { width: 1.4em; height: 1.4em; }
 
-/* nuxt-link active state — overridden per component via scoped styles */
+/* Small icon links (email / github / linkedin) */
+.icon-link {
+  display: inline-flex;
+  color: var(--fore-primary);
+  transition: color 150ms ease, transform 150ms ease;
+}
+.icon-link:hover { color: var(--accent); transform: translateY(-2px); }
+.icon-link svg { width: 20px; height: 20px; }
+
+/* Subtle text */
+.subtle { color: var(--fore-subtle); }
+
+/* Prose blocks */
+.prose-block > p + p { margin-top: 1rem; }
+.prose-block p { color: var(--fore-primary); line-height: 1.65; }
+
+/* Devicon sizing */
+.tool-item {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 1rem;
+}
+.tool-item i { font-size: 1.25rem; line-height: 1; }
 /* purgecss end ignore */
