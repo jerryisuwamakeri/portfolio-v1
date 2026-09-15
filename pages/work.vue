@@ -89,12 +89,18 @@ export default {
           tags: ['Laravel 11', 'Livewire 3', 'Alpine.js', 'WebSockets', 'Bitcoin'] }
       ],
       jobs: [
+        { title: 'Lambuvet', role: 'Fullstack Developer', date: 'Sep 2026', url: 'https://lambuvet.com', category: 'AgriTech',
+          desc: 'Digital veterinary and livestock management platform for Nigerian farmers. Farmer registration with persistent IDs, animal-by-animal and flock-level records, vet case reporting from field to resolution, vaccination and treatment history, and animal health insurance plans.',
+          tags: ['Fullstack', 'Livestock Records', 'Case Management', 'Insurance', 'Auth'] },
         { title: 'Leviyah', role: 'Fullstack Engineer', date: '2025', url: 'https://leviyah.com', category: 'E-commerce',
           desc: 'Full-stack e-commerce platform. Next.js storefront covering shop, cart, checkout, and account management. Laravel REST API backend. AWS S3 for media storage. Livewire admin dashboard for real-time order tracking and inventory.',
           tags: ['Next.js', 'Laravel', 'Livewire', 'AWS S3', 'TypeScript', 'MySQL'] },
         { title: 'Women Thrive by Design', role: 'Web Developer', date: 'Apr 2026', url: 'https://womenthrivebydesign.com/', category: 'Web',
           desc: 'Built a purpose-driven platform for women from concept to production. Responsive UI, CMS integration, performance and SEO optimisation.',
           tags: ['Web Dev', 'CMS', 'SEO', 'Performance'] },
+        { title: 'Terraverdecare', role: 'Web Developer', date: 'Apr 2026', url: 'https://terraverdecare.com', category: 'E-commerce',
+          desc: 'Brand and e-commerce site for a Nigerian menstrual health company making pads from plant-based agricultural fibres. Product shop with single and bulk ordering, partnership enquiries, impact metrics, and a journal for research and media stories.',
+          tags: ['E-commerce', 'CMS', 'SEO', 'Performance'] },
         { title: 'Tuwanx', role: 'Mobile App & Backend Developer', date: 'Jul 2025 – Jan 2026', url: 'https://tuwanx.com', category: 'Mobile',
           desc: 'Built the mobile application and backend infrastructure from scratch. Cross-platform app on iOS and Android, real-time APIs, auth, and deployment pipeline.',
           tags: ['React Native', 'Node.js', 'REST APIs', 'Auth'] },
