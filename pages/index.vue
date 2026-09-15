@@ -259,12 +259,16 @@ export default {
 .work-link {
   display: flex;
   flex-direction: column;
-  padding: 1.25rem 2rem;
-  margin: -1.25rem -1.75rem;
+  padding: 1.25rem 0;
+  margin: -1.25rem 0;
   border-bottom: 2px solid var(--border);
   transition: background-color 150ms ease;
 }
 .work-link:hover { background: var(--back-subtle); }
+@media (min-width: 768px) {
+  /* Bleed into the page gutter so the hover highlight reads full-width */
+  .work-link { padding: 1.25rem 1.75rem; margin: -1.25rem -1.75rem; }
+}
 .work-main { max-width: 32rem; }
 .work-title {
   font-size: 1.25rem;
